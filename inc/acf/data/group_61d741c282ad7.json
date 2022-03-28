@@ -1,0 +1,135 @@
+{
+    "key": "group_61d741c282ad7",
+    "title": "Featured items row",
+    "fields": [
+        {
+            "key": "field_61d741c2b5996",
+            "label": "Featured items",
+            "name": "featured_items",
+            "type": "repeater",
+            "instructions": "The maximum no. of featured items that can be added is 6",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_61d7426a0bbed",
+            "min": 0,
+            "max": 6,
+            "layout": "block",
+            "button_label": "Add featured item",
+            "sub_fields": [
+                {
+                    "key": "field_61d7426a0bbed",
+                    "label": "Select featured item",
+                    "name": "select_post_object",
+                    "type": "post_object",
+                    "instructions": "Select a page or post, or use the custom fields instead",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "post_type": [
+                        "page",
+                        "post"
+                    ],
+                    "taxonomy": "",
+                    "allow_null": 1,
+                    "multiple": 0,
+                    "return_format": "id",
+                    "ui": 1
+                },
+                {
+                    "key": "field_61d741c2b6aaa",
+                    "label": "Custom image",
+                    "name": "img",
+                    "type": "image",
+                    "instructions": "Use this instead of or to overwrite the selected featured item's featured image. A placeholder will be used when no image is set",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_61d741c2b65b0",
+                    "label": "Custom heading",
+                    "name": "heading",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_61d741c2b5996",
+                                "operator": "!=empty"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_61d742e20bbee",
+                    "label": "Custom link",
+                    "name": "url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/featured-items-row"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 1,
+    "modified": 1647022448
+}

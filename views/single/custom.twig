@@ -1,0 +1,47 @@
+{% import "snippets.twig" as snippets %}
+{% extends 'single.twig' %}
+
+{# single header #}
+{% block single_header %}
+{% endblock %}
+
+{% block single_content_wrap %}
+  <div>
+  
+    {# single content #}
+    {% block single_content %}
+      <section class="article-content">
+        {% if not fn('post_password_required', post.id) %}
+          <div class="post-content article-content-editor gutenberg-editor">
+            {{ post.content }}
+          </div>
+        {% else %}
+          <div class="password-protected-form uk-container uk-container-xsmall uk-section">
+            <p class="uk-text-center uk-text-lead">{{ snippets.pass_protect_text|e('esc_html') }}</p>
+            <form class="password-form" action="{{ site.site_url|e('esc_url') }}/wp-login.php?action=postpass" method="post">
+              <div class="uk-grid-collapse uk-flex uk-flex-middle" uk-grid>
+                <div class="uk-width-auto uk-visible@m">
+                  <label for="pwbox-{{ post.id|e('esc_html') }}" class="uk-form-label uk-margin-small-right">{{ snippets.pass_label|e('esc_html') }}:</label>
+                </div>
+                <div class="uk-width-expand">
+                  <input class="password-box uk-input uk-width-expand" name="post_password" id="pwbox-{{ post.id|e('esc_html') }}" type="password" placeholder="{{ snippets.pass_label|e('esc_html') }}" size="20" maxlength="20" />
+                </div>
+                <div class="uk-width-auto">
+                  <input class="password-btn uk-button uk-button-primary" type="submit" name="Submit" value="{{ snippets.pass_enter_text|e('esc_html') }}" />
+                </div>
+              </div>
+            </form>
+          </div>
+        {% endif %}
+      </section>
+    {% endblock %}
+    
+    {# single footer #}
+    {% block single_footer %}
+    {% endblock %}
+  
+  </div>
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

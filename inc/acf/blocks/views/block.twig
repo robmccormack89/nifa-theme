@@ -1,0 +1,89 @@
+{# rmcc-block styles 
+
+  Extend this downstream to add inline styles for specific blocks
+
+#}
+
+{% block block_styles %}
+{% endblock %}
+
+{# rmcc-block settings 
+
+  Setting variables relating to the block settings. These settings are within the 
+  block-editing dialog/popup box. So all subsequent blocks can make use of these 
+  settings where necessary
+
+#}
+
+{# we should only do the block.align stuff when not in preview-mode as the editor has its own containers #}
+{% if block.align and not is_preview %}
+  {% set align_container = (block.align == 'left' or block.align == 'center' or block.align == 'right') ? 'uk-container uk-container-small' : ((block.align == 'full') ? 'uk-container uk-container-expand uk-padding-remove-horizontal' : ((block.align == 'wide') ? 'uk-container uk-container-xlarge' : '')) %}
+  {% set align_break = (block.align == 'wide' or block.align == 'full') ? 'uk-container-break' : '' %}
+  {% set align_style = (block.align == 'right') ? 'style="padding-right:0;margin-right:0;"' : ((block.align == 'left') ? 'style="padding-left:0;margin-left:0;"' : '') %}
+{% endif %}
+
+{# can be 'left', 'center' or 'right', so best use is with uk-text/uk-flex #}
+{% set align_text = block.align_text %}
+
+{# align_content can be false, default or 'matrix'. when matrix, we use align_content_pos to set uk-position classes #}
+{% if block.align_content %}
+  {% set align_content = (block.align_content == 'center') ? 'middle' : block.align_content  %} {# non-matrix #}
+  
+  {% set align_content_pos = (block.align_content == 'top right') ? 'uk-position-top-right' : ((block.align_content == 'top center') ? 'uk-position-top-center' : ((block.align_content == 'top left') ? 'uk-position-top-left' : '')) %} {# matrix: top #}
+  
+  {% set align_content_pos = (block.align_content == 'center right') ? 'uk-position-center-right' : ((block.align_content == 'center center') ? 'uk-position-center' : ((block.align_content == 'center left') ? 'uk-position-center-left' : align_content_pos)) %} {# matrix: center #}
+  
+  {% set align_content_pos = (block.align_content == 'bottom right') ? 'uk-position-bottom-right' : ((block.align_content == 'bottom center') ? 'uk-position-bottom-center' : ((block.align_content == 'bottom left') ? 'uk-position-bottom-left' : align_content_pos)) %} {# matrix: bottom #}
+{% endif %}
+
+{# block.full_height is boolean #}
+{% set fullheight = block.full_height %}
+{% set fullheight_img_class = fullheight ? 'cover-img home-cover-img' : 'cover-img' %}
+
+{# rmcc-block custom fields (common) 
+
+  These variables are for common custom fields that may be applied to blocks. 
+  These variables may be modified, or new variables relating to new ACF fields 
+  may be decalred downstream, but don't forget put them inside the containing Twig
+  block e.g: block_content
+
+#}
+
+{% set heading = fields.heading %}
+{% set message = fields.msg %}
+{% set button_text = fields.btn_txt %}
+{% set button_url = fields.btn_url %}
+{% set button_classes = fields.btn_classes %}
+{% set gallery = fields.gallery %}
+{% set first_class = (fields.layout == 'right') ? 'uk-flex-first' %}
+{% set bottom_msg = fields.bottom_msg %}
+{# set top_msg = fields.top_msg #}
+{% set bg_colour = fields.bg_colour|default('#008ce1') %}
+{% set embed_url = fields.embed_url  %}
+{% set _block_img = (fields.img) ? Image(fields.img) : null %}
+{% set light_class = (fields.light_mode == 'enabled') ? 'uk-light' : 'uk-dark' %}
+
+{# rmcc-block wrapper 
+
+  A wrapper for the block, so we add some variables & apply some block settings 
+  to the particular block, specifically the 'align' setting with uikit container 
+  logic
+
+#}
+
+<div class="{{ align_break }} rmcc-block">
+  <div id="{{ block.id|e('esc_html') }}" class="{{ align_container }} {{ block.className|e('esc_html') }}" {{ align_style }}>
+    {% block block_content %}
+      Sorry, nothing to display here...
+    {% endblock %}
+  </div>
+</div>
+
+{# rmcc-block scripts 
+
+  Extend this downstream to add inline scripts for specific blocks
+
+#}
+
+{% block block_scripts %}
+{% endblock %}

@@ -1,0 +1,28 @@
+{#
+/**
+ * Block Name: Featured Gallery
+ *
+ * This is the template that displays the Featured Gallery block.
+ */
+#}
+
+{% extends "block.twig" %}
+{% import "block-functions.twig" as functions %}
+{% import "block-snippets.twig" as snippets %}
+
+{% block block_content %}
+  {% set button_text = button_text|default( snippets.view_gallery() ) %}
+  {% set button_classes = button_classes|default('uk-button uk-button-primary') %}
+
+  <div class="uk-inline uk-flex uk-flex-{{ align_text|e('esc_html') }}">
+    <a id="{{ block.id|e('esc_html') }}" class="{{ button_classes|e('esc_html') }}">
+      {{ button_text|e('esc_html') }}
+    </a>
+  </div>
+{% endblock %}
+
+{% block block_scripts %}
+  {% if gallery and not is_preview %}
+    {{ functions.block_lg(is_preview, block.id|e('esc_html'), gallery) }}
+  {% endif %}
+{% endblock %}

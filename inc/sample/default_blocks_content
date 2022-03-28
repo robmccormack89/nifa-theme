@@ -1,0 +1,846 @@
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Gutenberg Sample Content.<br>Put together with ❤️ by <a href="https://artisanthemes.io/">Artisan Themes</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":1} -->
+<h1>This is a heading (H1)</h1>
+<!-- /wp:heading -->
+
+<!-- wp:heading -->
+<h2>This is a heading (H2)</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":3} -->
+<h3>This is a heading (H3)</h3>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":4} -->
+<h4>This is a heading (H4)</h4>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":5} -->
+<h5>This is a heading (H5)</h5>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":6} -->
+<h6>This is a heading (H6)</h6>
+<!-- /wp:heading -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Paragraph Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>This is a <strong>regular</strong> paragraph block. Professionally productize highly efficient results with world-class core competencies. Objectively matrix leveraged architectures vis-a-vis error-free applications. Completely maximize customized portals via fully researched metrics. Enthusiastically generate premier action items through web-enabled e-markets. Efficiently parallel task holistic intellectual capital and client-centric markets.<br></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">This is a <strong>center aligned</strong> paragraph block. Professionally productize highly efficient results with world-class core competencies. Objectively matrix leveraged architectures vis-a-vis error-free applications. Completely maximize customized portals via fully researched metrics. Enthusiastically generate premier action items through web-enabled e-markets. Efficiently parallel task holistic intellectual capital and client-centric markets.<br></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"right"} -->
+<p class="has-text-align-right">This is a <strong>right aligned</strong> paragraph block. Professionally productize highly efficient results with world-class core competencies. Objectively matrix leveraged architectures vis-a-vis error-free applications. Completely maximize customized portals via fully researched metrics. Enthusiastically generate premier action items through web-enabled e-markets. Efficiently parallel task holistic intellectual capital and client-centric markets.<br></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"align":"left"} -->
+<p class="has-text-align-left">This is a paragraph block with a <a href="https://www.google.com/" target="_blank" rel="noopener">link</a>. Professionally productize highly efficient results with world-class core competencies. Objectively matrix leveraged architectures vis-a-vis error-free applications. Completely maximize customized portals via fully researched metrics. Enthusiastically generate premier action items through web-enabled e-markets. Efficiently parallel task holistic intellectual capital and client-centric markets.<br></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"dropCap":true} -->
+<p class="has-drop-cap">This is a paragraph block with a <strong>drop cap</strong>. Professionally productize highly efficient results with world-class core competencies. Objectively matrix leveraged architectures vis-a-vis error-free applications. Completely maximize customized portals via fully researched metrics. Enthusiastically generate premier action items through web-enabled e-markets. Efficiently parallel task holistic intellectual capital and client-centric markets.<br></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"small"} -->
+<p class="has-small-font-size">This is a <strong>small</strong> paragraph block. Professionally productize highly efficient results with world-class core competencies. Objectively matrix leveraged architectures vis-a-vis error-free applications. Completely maximize customized portals via fully researched metrics. Enthusiastically generate premier action items through web-enabled e-markets. Efficiently parallel task holistic intellectual capital and client-centric markets.<br></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"regular"} -->
+<p class="has-regular-font-size">This is a <strong>medium</strong> paragraph block. Professionally productize highly efficient results with world-class core competencies. Objectively matrix leveraged architectures vis-a-vis error-free applications. Completely maximize customized portals via fully researched metrics. Enthusiastically generate premier action items through web-enabled e-markets. Efficiently parallel task holistic intellectual capital and client-centric markets.<br></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"large"} -->
+<p class="has-large-font-size">This is a <strong>large</strong> paragraph block. Professionally productize highly efficient results with world-class core competencies. Efficiently parallel task holistic intellectual capital and client-centric markets.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"fontSize":"larger"} -->
+<p class="has-larger-font-size">This is an <strong>extra large</strong> paragraph block. Professionally productize highly efficient results with world-class core competencies.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph {"style":{"color":{"text":"#ffffff","background":"#709372"}}} -->
+<p class="has-text-color has-background" style="background-color:#709372;color:#ffffff">This is a paragraph block with a <strong>background</strong>. Professionally productize highly efficient results with world-class core competencies. Objectively matrix leveraged architectures vis-a-vis error-free applications. Completely maximize customized portals via fully researched metrics. Enthusiastically generate premier action items through web-enabled e-markets. Efficiently parallel task holistic intellectual capital and client-centric markets.<br></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Image Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":5} -->
+<h5>Standard width</h5>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":476,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/stage-3-internal-1024x768.jpeg" alt="" class="wp-image-476"/><figcaption>Caption</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":5} -->
+<h5>Wide width</h5>
+<!-- /wp:heading -->
+
+<!-- wp:image {"align":"wide","id":470,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image alignwide size-large"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/construction-site-1024x624.jpeg" alt="" class="wp-image-470"/><figcaption>This is a caption</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":5} -->
+<h5>Full width</h5>
+<!-- /wp:heading -->
+
+<!-- wp:image {"align":"full","id":61,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image alignfull size-large"><img src="https://loadingdock.ie/wp-content/uploads/2021/12/1.-Clean-Room-Cover-v3-1024x577.jpg" alt="Clean Room with Doors" class="wp-image-61"/><figcaption>This is a caption</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"align":"center","id":474,"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/stage-3-1024x768.jpeg" alt="" class="wp-image-474"/><figcaption>This is a center aligned image</figcaption></figure></div>
+<!-- /wp:image -->
+
+<!-- wp:image {"align":"left","id":476,"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-image"><figure class="alignleft size-large"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/stage-3-internal-1024x768.jpeg" alt="My alt..." class="wp-image-476"/><figcaption>This is a left aligned image</figcaption></figure></div>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>This is a paragraph block. Professionally productize highly efficient results with world-class core competencies. Objectively matrix leveraged architectures vis-a-vis error-free applications. Completely maximize customized portals via fully researched metrics. Enthusiastically generate premier action items through web-enabled e-markets. Efficiently parallel task holistic intellectual capital and client-centric markets.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This is a paragraph block. Professionally productize highly efficient results with world-class core competencies. Objectively matrix leveraged architectures vis-a-vis error-free applications. Completely maximize customized portals via fully researched metrics. Enthusiastically generate premier action items through web-enabled e-markets. Efficiently parallel task holistic intellectual capital and client-centric markets.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"align":"right","id":476,"sizeSlug":"large","linkDestination":"none"} -->
+<div class="wp-block-image"><figure class="alignright size-large"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/stage-3-internal-1024x768.jpeg" alt="My alt..." class="wp-image-476"/><figcaption>This is a right aligned image</figcaption></figure></div>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p>This is a paragraph block. Professionally productize highly efficient results with world-class core competencies. Objectively matrix leveraged architectures vis-a-vis error-free applications. Completely maximize customized portals via fully researched metrics. Enthusiastically generate premier action items through web-enabled e-markets. Efficiently parallel task holistic intellectual capital and client-centric markets. </p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This is a paragraph block. Professionally productize highly efficient results with world-class core competencies. Objectively matrix leveraged architectures vis-a-vis error-free applications. Completely maximize customized portals via fully researched metrics. Enthusiastically generate premier action items through web-enabled e-markets. Efficiently parallel task holistic intellectual capital and client-centric markets.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Cover Image Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:cover {"url":"https://loadingdock.ie/wp-content/uploads/2021/12/1.-Clean-Room-Cover-v3-scaled.jpg","id":61,"dimRatio":50,"isDark":false} -->
+<div class="wp-block-cover is-light"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-61" alt="Clean Room with Doors" src="https://loadingdock.ie/wp-content/uploads/2021/12/1.-Clean-Room-Cover-v3-scaled.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is a standard width cover image.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"url":"https://loadingdock.ie/wp-content/uploads/2021/12/1.-Clean-Room-Cover-v3-scaled.jpg","id":61,"dimRatio":50,"isDark":false,"align":"wide"} -->
+<div class="wp-block-cover alignwide is-light"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-61" alt="Clean Room with Doors" src="https://loadingdock.ie/wp-content/uploads/2021/12/1.-Clean-Room-Cover-v3-scaled.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is a wide cover image.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"url":"https://loadingdock.ie/wp-content/uploads/2021/12/1.-Clean-Room-Cover-v3-scaled.jpg","id":61,"dimRatio":50,"isDark":false,"align":"full"} -->
+<div class="wp-block-cover alignfull is-light"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-61" alt="Clean Room with Doors" src="https://loadingdock.ie/wp-content/uploads/2021/12/1.-Clean-Room-Cover-v3-scaled.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is a full width cover image.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"url":"https://loadingdock.ie/wp-content/uploads/2021/12/1.-Clean-Room-Cover-v3-scaled.jpg","id":61,"hasParallax":true,"dimRatio":50,"contentPosition":"center center","isDark":false,"align":"full"} -->
+<div class="wp-block-cover alignfull is-light has-parallax" style="background-image:url(https://loadingdock.ie/wp-content/uploads/2021/12/1.-Clean-Room-Cover-v3-scaled.jpg)"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is a <g class="gr_ gr_3 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling multiReplace" id="3" data-gr-id="3">full width</g> cover image with fixed background.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"url":"https://loadingdock.ie/wp-content/uploads/2021/12/1.-Clean-Room-Cover-v3-scaled.jpg","id":61,"dimRatio":80,"align":"full"} -->
+<div class="wp-block-cover alignfull"><span aria-hidden="true" class="has-background-dim-80 wp-block-cover__gradient-background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-61" alt="Clean Room with Doors" src="https://loadingdock.ie/wp-content/uploads/2021/12/1.-Clean-Room-Cover-v3-scaled.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"center","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-center has-large-font-size">This is a <g class="gr_ gr_3 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling multiReplace" id="3" data-gr-id="3">full width</g> cover image with higher background opacity.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"url":"https://loadingdock.ie/wp-content/uploads/2021/12/1.-Clean-Room-Cover-v3-scaled.jpg","id":61,"dimRatio":50,"isDark":false,"align":"full"} -->
+<div class="wp-block-cover alignfull is-light"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-61" alt="Clean Room with Doors" src="https://loadingdock.ie/wp-content/uploads/2021/12/1.-Clean-Room-Cover-v3-scaled.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"left","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-left has-large-font-size">This is a <g class="gr_ gr_26 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling multiReplace" id="26" data-gr-id="26">full width</g> cover image with left aligned text.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:cover {"url":"https://loadingdock.ie/wp-content/uploads/2021/12/1.-Clean-Room-Cover-v3-scaled.jpg","id":61,"dimRatio":50,"isDark":false,"align":"full"} -->
+<div class="wp-block-cover alignfull is-light"><span aria-hidden="true" class="wp-block-cover__gradient-background has-background-dim"></span><img class="wp-block-cover__image-background wp-image-61" alt="Clean Room with Doors" src="https://loadingdock.ie/wp-content/uploads/2021/12/1.-Clean-Room-Cover-v3-scaled.jpg" data-object-fit="cover"/><div class="wp-block-cover__inner-container"><!-- wp:paragraph {"align":"right","placeholder":"Write title…","fontSize":"large"} -->
+<p class="has-text-align-right has-large-font-size">This is a <g class="gr_ gr_9 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling multiReplace" id="9" data-gr-id="9">full width</g> cover image with right aligned text.</p>
+<!-- /wp:paragraph --></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Gallery Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":5} -->
+<h5>Standard width</h5>
+<!-- /wp:heading -->
+
+<!-- wp:gallery {"columns":3,"linkTo":"none","className":"alignnone"} -->
+<figure class="wp-block-gallery has-nested-images columns-3 is-cropped alignnone"><!-- wp:image {"id":476,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/stage-3-internal.jpeg" alt="My alt..." class="wp-image-476"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":470,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/construction-site-1024x624.jpeg" alt="" class="wp-image-470"/><figcaption>Caption</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":474,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/stage-3.jpeg" alt="" class="wp-image-474"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":473,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/stage-2.jpeg" alt="" class="wp-image-473"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":472,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/image-2.jpeg" alt="" class="wp-image-472"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":471,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/image.jpeg" alt="" class="wp-image-471"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":470,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/construction-site.jpeg" alt="" class="wp-image-470"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":469,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/internal-doors-scaled.jpg" alt="Internal Doors - Westmeath Mullingar" class="wp-image-469"/><figcaption>Internal Doors</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":460,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2021/12/1.-Clean-Room-Cover-v3-1-scaled-e1639761918178.jpg" alt="Clean Room with Doors" class="wp-image-460"/><figcaption>Clean Room with Doors by  Loading Dock</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":61,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2021/12/1.-Clean-Room-Cover-v3-scaled.jpg" alt="Clean Room with Doors" class="wp-image-61"/></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:heading {"level":5} -->
+<h5>Wide width</h5>
+<!-- /wp:heading -->
+
+<!-- wp:gallery {"columns":3,"linkTo":"none","align":"wide","className":"alignnone"} -->
+<figure class="wp-block-gallery alignwide has-nested-images columns-3 is-cropped alignnone"><!-- wp:image {"id":472,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/image-2-e1646315880755-1024x468.jpeg" alt="" class="wp-image-472"/><figcaption>Caption</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":476,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/stage-3-internal.jpeg" alt="My alt..." class="wp-image-476"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":470,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/construction-site-1024x624.jpeg" alt="" class="wp-image-470"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":474,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/stage-3.jpeg" alt="" class="wp-image-474"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":473,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/stage-2.jpeg" alt="" class="wp-image-473"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":472,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/image-2.jpeg" alt="" class="wp-image-472"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":471,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/image.jpeg" alt="" class="wp-image-471"/></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:heading {"level":5} -->
+<h5>Full width</h5>
+<!-- /wp:heading -->
+
+<!-- wp:gallery {"columns":5,"linkTo":"none","align":"full","className":"alignnone"} -->
+<figure class="wp-block-gallery alignfull has-nested-images columns-5 is-cropped alignnone"><!-- wp:image {"id":61,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://loadingdock.ie/wp-content/uploads/2021/12/1.-Clean-Room-Cover-v3-1024x577.jpg" alt="Clean Room with Doors" class="wp-image-61"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":476,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/stage-3-internal.jpeg" alt="My alt..." class="wp-image-476"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":473,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/stage-2.jpeg" alt="" class="wp-image-473"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":474,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/stage-3.jpeg" alt="" class="wp-image-474"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":472,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/image-2.jpeg" alt="" class="wp-image-472"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":471,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/image.jpeg" alt="" class="wp-image-471"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":61,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2021/12/1.-Clean-Room-Cover-v3-scaled.jpg" alt="Clean Room with Doors" class="wp-image-61"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":470,"linkDestination":"none"} -->
+<figure class="wp-block-image"><img src="https://loadingdock.ie/wp-content/uploads/2022/01/construction-site.jpeg" alt="" class="wp-image-470"/></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">List Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul><li>List item 1</li><li>List item 2</li><li>List item 3</li><li>List item 4</li></ul>
+<!-- /wp:list -->
+
+<!-- wp:list {"ordered":true} -->
+<ol><li>List item 1</li><li>List item 2</li><li>List item 3</li><li>List item 4</li></ol>
+<!-- /wp:list -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Text Columns Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":5} -->
+<h5>2 Columns - Standard Width</h5>
+<!-- /wp:heading -->
+
+<!-- wp:text-columns -->
+<div class="wp-block-text-columns alignundefined columns-2"><div class="wp-block-column"><p><strong>This is the <strong>first</strong> column.</strong> Completely disintermediate user friendly content through covalent core competencies. Enthusiastically seize intermandated alignments for resource sucking paradigms. Intrinsicly engineer sustainable initiatives through resource maximizing benefits. Efficiently fashion top-line vortals through distributed interfaces.<br></p></div><div class="wp-block-column"><p><strong>This is the second column.</strong> Completely disintermediate user friendly content through covalent core competencies. Enthusiastically seize intermandated alignments for resource sucking paradigms. Intrinsicly engineer sustainable initiatives through resource maximizing benefits. Efficiently fashion top-line vortals through distributed interfaces.<br></p></div></div>
+<!-- /wp:text-columns -->
+
+<!-- wp:heading {"level":5} -->
+<h5>2 Columns - Wide</h5>
+<!-- /wp:heading -->
+
+<!-- wp:text-columns {"width":"wide"} -->
+<div class="wp-block-text-columns alignwide columns-2"><div class="wp-block-column"><p><strong>This is the <strong>first</strong> column.</strong> Appropriately initiate pandemic data via economically sound scenarios. Credibly foster inexpensive methodologies via cross-media leadership. Dramatically monetize seamless infomediaries via principle-centered functionalities. Seamlessly morph <g class="gr_ gr_11 gr-alert gr_spell gr_inline_cards gr_disable_anim_appear ContextualSpelling ins-del multiReplace" id="11" data-gr-id="11">cross functional</g> outsourcing via team building meta-services. <g class="gr_ gr_10 gr-alert gr_spell gr_inline_cards gr_disable_anim_appear ContextualSpelling ins-del multiReplace" id="10" data-gr-id="10">Intrinsicly</g> embrace installed base products for enabled testing procedures.</p></div><div class="wp-block-column"><p><strong>This is the <strong>second</strong> column.</strong> Appropriately initiate pandemic data via economically sound scenarios. Credibly foster inexpensive methodologies via cross-media leadership. Dramatically monetize seamless infomediaries via principle-centered functionalities. Seamlessly morph <g class="gr_ gr_20 gr-alert gr_spell gr_inline_cards gr_disable_anim_appear ContextualSpelling ins-del multiReplace" id="20" data-gr-id="20">cross functional</g> outsourcing via team building meta-services. <g class="gr_ gr_19 gr-alert gr_spell gr_inline_cards gr_disable_anim_appear ContextualSpelling ins-del multiReplace" id="19" data-gr-id="19">Intrinsicly</g> embrace installed base products for enabled testing procedures.</p></div></div>
+<!-- /wp:text-columns -->
+
+<!-- wp:heading {"level":5} -->
+<h5>2 Columns - Full Width</h5>
+<!-- /wp:heading -->
+
+<!-- wp:text-columns {"width":"full"} -->
+<div class="wp-block-text-columns alignfull columns-2"><div class="wp-block-column"><p><strong>This is the first column.</strong> Appropriately initiate pandemic data via economically sound scenarios. Credibly foster inexpensive methodologies via cross-media leadership. Dramatically monetize seamless infomediaries via principle-centered functionalities. Seamlessly morph <g class="gr_ gr_10 gr-alert gr_spell gr_inline_cards gr_disable_anim_appear ContextualSpelling ins-del multiReplace" id="10" data-gr-id="10">cross functional</g> outsourcing via team building meta-services. <g class="gr_ gr_9 gr-alert gr_spell gr_inline_cards gr_disable_anim_appear ContextualSpelling ins-del multiReplace" id="9" data-gr-id="9">Intrinsicly</g> embrace installed base products for enabled testing procedures.</p></div><div class="wp-block-column"><p><strong>This is the <strong>second</strong> column.</strong> Appropriately initiate pandemic data via economically sound scenarios. Credibly foster inexpensive methodologies via cross-media leadership. Dramatically monetize seamless infomediaries via principle-centered functionalities. Seamlessly morph <g class="gr_ gr_21 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="21" data-gr-id="21">cross functional</g> outsourcing via team building meta-services. <g class="gr_ gr_19 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="19" data-gr-id="19">Intrinsicly</g> embrace installed base products for enabled testing procedures.</p></div></div>
+<!-- /wp:text-columns -->
+
+<!-- wp:heading {"level":5} -->
+<h5>3 Columns - Wide Width</h5>
+<!-- /wp:heading -->
+
+<!-- wp:text-columns {"columns":3,"width":"wide"} -->
+<div class="wp-block-text-columns alignwide columns-3"><div class="wp-block-column"><p><strong>This is the first column.</strong> Completely disintermediate user friendly content through covalent core competencies. Enthusiastically seize intermandated alignments for resource sucking paradigms. Intrinsicly engineer sustainable initiatives through resource maximizing benefits.</p></div><div class="wp-block-column"><p><strong>This is the second column.</strong> Completely disintermediate user friendly content through covalent core competencies. Enthusiastically seize intermandated alignments for resource sucking paradigms. Intrinsicly engineer sustainable initiatives through resource maximizing benefits.<br></p></div><div class="wp-block-column"><p><strong>This is the third column.</strong> Completely disintermediate user friendly content through covalent core competencies. Enthusiastically seize intermandated alignments for resource sucking paradigms. Intrinsicly engineer sustainable initiatives through resource maximizing benefits.</p></div></div>
+<!-- /wp:text-columns -->
+
+<!-- wp:heading {"level":5} -->
+<h5>4 Columns - Full Width</h5>
+<!-- /wp:heading -->
+
+<!-- wp:text-columns {"columns":4,"width":"full"} -->
+<div class="wp-block-text-columns alignfull columns-4"><div class="wp-block-column"><p><strong>This is the first column.</strong> Completely disintermediate user friendly content through covalent core competencies. Enthusiastically seize intermandated alignments for resource sucking paradigms.</p></div><div class="wp-block-column"><p><strong>This is the second column.</strong> Completely disintermediate user friendly content through covalent core competencies. Enthusiastically seize intermandated alignments for resource sucking paradigms.<br></p></div><div class="wp-block-column"><p><strong>This is the third column.</strong> Completely disintermediate user friendly content through covalent core competencies. Enthusiastically seize intermandated alignments for resource sucking paradigms.</p></div><div class="wp-block-column"><p><strong>This is the fourth column.</strong> Completely disintermediate user friendly content through covalent core competencies. Enthusiastically seize intermandated alignments for resource sucking paradigms.</p></div></div>
+<!-- /wp:text-columns -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center","className":"has-top-margin"} -->
+<h2 class="has-text-align-center has-top-margin">Columns Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":5} -->
+<h5>2 Columns - Standard Width</h5>
+<!-- /wp:heading -->
+
+<!-- wp:columns {"className":"has-2-columns"} -->
+<div class="wp-block-columns has-2-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Phosfluorescently morph intuitive relationships rather than customer directed human capital. Dynamically customize turnkey information whereas orthogonal processes. Assertively deliver superior leadership skills whereas holistic outsourcing. Enthusiastically iterate enabled best practices vis-a-vis 24/365 communities.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Phosfluorescently morph intuitive relationships rather than customer directed human capital. Dynamically customize turnkey information whereas orthogonal processes. Assertively deliver superior leadership skills whereas holistic outsourcing. Enthusiastically iterate enabled best practices vis-a-vis 24/365 communities.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:heading {"level":5} -->
+<h5>2 Columns - Wide</h5>
+<!-- /wp:heading -->
+
+<!-- wp:columns {"align":"wide","className":"has-2-columns"} -->
+<div class="wp-block-columns alignwide has-2-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Phosfluorescently morph intuitive relationships rather than customer directed human capital. Dynamically customize turnkey information whereas orthogonal processes. Assertively deliver superior leadership skills whereas holistic outsourcing. Enthusiastically iterate enabled best practices vis-a-vis 24/365 communities.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Phosfluorescently morph intuitive relationships rather than customer directed human capital. Dynamically customize turnkey information whereas orthogonal processes. Assertively deliver superior leadership skills whereas holistic outsourcing. Enthusiastically iterate enabled best practices vis-a-vis 24/365 communities.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:heading {"level":5} -->
+<h5>2 Columns - Full Width</h5>
+<!-- /wp:heading -->
+
+<!-- wp:columns {"align":"full","className":"has-2-columns"} -->
+<div class="wp-block-columns alignfull has-2-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Phosfluorescently morph intuitive relationships rather than customer directed human capital. Dynamically customize turnkey information whereas orthogonal processes. Assertively deliver superior leadership skills whereas holistic outsourcing. Enthusiastically iterate enabled best practices vis-a-vis 24/365 communities.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:paragraph -->
+<p>Phosfluorescently morph intuitive relationships rather than customer directed human capital. Dynamically customize turnkey information whereas orthogonal processes. Assertively deliver superior leadership skills whereas holistic outsourcing. Enthusiastically iterate enabled best practices vis-a-vis 24/365 communities.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Button Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link" href="https://www.google.com/">This is a button</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="https://www.google.com/">This is an outlined button</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link" href="https://www.google.com/">This is a squared button</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"align":"center"} -->
+<div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="https://www.google.com/">This is a centered button</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"backgroundColor":"luminous-vivid-orange","textColor":"luminous-vivid-orange","align":"center","className":"is-style-outline"} -->
+<div class="wp-block-button aligncenter is-style-outline"><a class="wp-block-button__link has-luminous-vivid-orange-color has-luminous-vivid-orange-background-color has-text-color has-background" href="https://www.google.com/">This is a button with custom colors</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"align":"center","style":{"color":{"text":"#ffffff","background":"#3db8eb"}},"className":"aligncenter"} -->
+<div class="wp-block-button aligncenter"><a class="wp-block-button__link has-text-color has-background" href="https://www.google.com/" style="background-color:#3db8eb;color:#ffffff">This is a button with custom colors</a></div>
+<!-- /wp:button -->
+
+<!-- wp:button {"align":"right"} -->
+<div class="wp-block-button alignright"><a class="wp-block-button__link" href="https://www.google.com/">This is a button on the right</a></div>
+<!-- /wp:button -->
+
+<!-- wp:paragraph -->
+<p>This is a regular paragraph block. Professionally productize highly efficient results with world-class core competencies. Objectively matrix leveraged architectures vis-a-vis error-free applications. Completely maximize customized portals via fully researched metrics. Enthusiastically generate premier action items.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Quote &amp; Pullquote Blocks</h2>
+<!-- /wp:heading -->
+
+<!-- wp:heading {"level":5} -->
+<h5>Quote - Regular Style</h5>
+<!-- /wp:heading -->
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p><g class="gr_ gr_15 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar only-ins replaceWithoutSep" id="15" data-gr-id="15">Design</g> is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works.</p><cite>Steve Jobs</cite></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":5} -->
+<h5>Quote - Large Style</h5>
+<!-- /wp:heading -->
+
+<!-- wp:quote {"className":"is-style-large"} -->
+<blockquote class="wp-block-quote is-style-large"><p><g class="gr_ gr_15 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar only-ins replaceWithoutSep" id="15" data-gr-id="15">Design</g> is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works.</p><cite>Steve Jobs</cite></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:heading {"level":5} -->
+<h5>Pullquote - Standard width</h5>
+<!-- /wp:heading -->
+
+<!-- wp:pullquote -->
+<figure class="wp-block-pullquote"><blockquote><p>Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works.</p><cite>Steve Jobs</cite></blockquote></figure>
+<!-- /wp:pullquote -->
+
+<!-- wp:heading {"level":5} -->
+<h5>Pullquote - Wide</h5>
+<!-- /wp:heading -->
+
+<!-- wp:pullquote {"className":"alignwide"} -->
+<figure class="wp-block-pullquote alignwide"><blockquote><p>Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works.</p><cite>Steve Jobs</cite></blockquote></figure>
+<!-- /wp:pullquote -->
+
+<!-- wp:heading {"level":5} -->
+<h5>Pullquote - Full width</h5>
+<!-- /wp:heading -->
+
+<!-- wp:pullquote {"className":"alignfull"} -->
+<figure class="wp-block-pullquote alignfull"><blockquote><p>Design is a funny word. Some people think design means how it looks. But of course, if you dig deeper, it's really how it works.</p><cite>Steve Jobs</cite></blockquote></figure>
+<!-- /wp:pullquote -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Audio Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:audio -->
+<figure class="wp-block-audio"><audio controls src="https://freemusicarchive.org/file/music/WFMU/Broke_For_Free/Directionless_EP/Broke_For_Free_-_01_-_Night_Owl.mp3"></audio><figcaption>This is a caption</figcaption></figure>
+<!-- /wp:audio -->
+
+<!-- wp:audio {"align":"left"} -->
+<figure class="wp-block-audio alignleft"><audio controls src="https://freemusicarchive.org/file/music/WFMU/Broke_For_Free/Directionless_EP/Broke_For_Free_-_01_-_Night_Owl.mp3"></audio><figcaption>Left aligned</figcaption></figure>
+<!-- /wp:audio -->
+
+<!-- wp:audio {"align":"right"} -->
+<figure class="wp-block-audio alignright"><audio controls src="https://freemusicarchive.org/file/music/WFMU/Broke_For_Free/Directionless_EP/Broke_For_Free_-_01_-_Night_Owl.mp3"></audio><figcaption>Right aligned</figcaption></figure>
+<!-- /wp:audio -->
+
+<!-- wp:audio {"align":"wide"} -->
+<figure class="wp-block-audio alignwide"><audio controls src="https://freemusicarchive.org/file/music/WFMU/Broke_For_Free/Directionless_EP/Broke_For_Free_-_01_-_Night_Owl.mp3"></audio><figcaption>Wide audio</figcaption></figure>
+<!-- /wp:audio -->
+
+<!-- wp:audio {"align":"full"} -->
+<figure class="wp-block-audio alignfull"><audio controls src="https://freemusicarchive.org/file/music/WFMU/Broke_For_Free/Directionless_EP/Broke_For_Free_-_01_-_Night_Owl.mp3"></audio><figcaption>Full width audio</figcaption></figure>
+<!-- /wp:audio -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Video Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Custom HTML Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<div>
+	<h4>
+		Hey, there!
+	</h4>
+	<p>
+		This is an HTML Block.
+	</p>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Code Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>@media only screen and (min-width: 960px) {
+
+	body .alignfull {
+		width: auto;
+		max-width: 1000%;
+
+		margin-right: calc(50% - 50vw);
+		margin-left: calc(50% - 50vw);
+	}
+
+	body .alignwide {
+		width: auto;
+		max-width: 1000%;
+		margin-right: calc(25% - 25vw);
+		margin-left: calc(25% - 25vw);
+	}
+
+	.alignwide img,
+	.alignfull img {
+		display: block;
+		margin: 0 auto;
+	}
+}</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center","className":"has-top-margin"} -->
+<h2 class="has-text-align-center has-top-margin">Preformatted Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:preformatted -->
+<pre class="wp-block-preformatted">This is some preformatted text. Preformatted text keeps your s p a c e s, tabs and<br>linebreaks as they are.</pre>
+<!-- /wp:preformatted -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Verse Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:verse -->
+<pre class="wp-block-verse">Dear Theodosia, what to say to you?<br>You have my eyes <br>You have your mother’s name<br><br>When you came into the world, you cried and it broke my heart<br><br>I’m dedicating every day to you<br>Domestic life was never quite my style<br>When you smile, you knock me out, I fall apart<br>And I thought I was so smart<br><br>–Dear Theodosia / Lin-Manuel Miranda</pre>
+<!-- /wp:verse -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Table Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:table {"hasFixedLayout":true,"className":"has-fixed-layout"} -->
+<figure class="wp-block-table has-fixed-layout"><table class="has-fixed-layout"><tbody><tr><td><strong>a</strong></td><td>Bananas</td><td>Apples</td></tr><tr><td><strong>b</strong></td><td>Oranges</td><td>Blueberries</td></tr><tr><td><strong>c</strong></td><td>Avocado</td><td>Grapes</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:table {"hasFixedLayout":true,"align":"wide","className":"has-fixed-layout"} -->
+<figure class="wp-block-table alignwide has-fixed-layout"><table class="has-fixed-layout"><tbody><tr><td><strong>a</strong></td><td>Bananas</td><td>Apples</td></tr><tr><td><strong>b</strong></td><td>Oranges</td><td>Blueberries</td></tr><tr><td><strong>c</strong></td><td>Avocado</td><td>Grapes</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:table {"hasFixedLayout":true,"align":"full","className":"has-fixed-layout"} -->
+<figure class="wp-block-table alignfull has-fixed-layout"><table class="has-fixed-layout"><tbody><tr><td><strong>a</strong></td><td>Bananas</td><td>Apples</td></tr><tr><td><strong>b</strong></td><td>Oranges</td><td>Blueberries</td></tr><tr><td><strong>c</strong></td><td>Avocado</td><td>Grapes</td></tr></tbody></table></figure>
+<!-- /wp:table -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Separator Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:separator {"className":"is-style-wide"} -->
+<hr class="wp-block-separator is-style-wide"/>
+<!-- /wp:separator -->
+
+<!-- wp:separator {"className":"is-style-dots"} -->
+<hr class="wp-block-separator is-style-dots"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center","className":"has-top-margin"} -->
+<h2 class="has-text-align-center has-top-margin">Spacer Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:spacer {"height":"80px"} -->
+<div style="height:80px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:paragraph {"align":"center","fontSize":"small"} -->
+<p class="has-text-align-center has-small-font-size">Yes, it's 80px of nothing.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"200px"} -->
+<div style="height:200px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:paragraph {"align":"center","fontSize":"small"} -->
+<p class="has-text-align-center has-small-font-size">Or 200px, whatever number you feel like.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Categories Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:categories {"showHierarchy":true,"showPostCounts":true} /-->
+
+<!-- wp:categories {"displayAsDropdown":true,"showHierarchy":true,"showPostCounts":true,"align":"full"} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Latest Posts Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:latest-posts {"displayPostDate":true} /-->
+
+<!-- wp:latest-posts {"displayPostDate":true,"postLayout":"grid","columns":2,"align":"wide"} /-->
+
+<!-- wp:latest-posts {"postsToShow":3,"displayPostDate":true,"postLayout":"grid","align":"full"} /-->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Twitter Embed Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"left"} -->
+<p class="has-text-align-left">This is a regular paragraph block. Professionally productize highly efficient results with world-class core competencies. Objectively matrix leveraged architectures vis-a-vis error-free applications. Completely maximize customized portals via fully researched metrics. Enthusiastically generate premier action items.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This is a regular paragraph block. Professionally productize highly efficient results with world-class core competencies. Objectively matrix leveraged architectures vis-a-vis error-free applications. Completely maximize customized portals via fully researched metrics. Enthusiastically generate premier action items.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:embed {"url":"https://twitter.com/artisanthemeswp/status/1006510213900488704","type":"rich","providerNameSlug":"twitter","responsive":true,"className":"wp-block-embed-twitter"} -->
+<figure class="wp-block-embed is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">
+https://twitter.com/artisanthemeswp/status/1006510213900488704
+</div><figcaption>This is a caption</figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:embed {"url":"https://twitter.com/artisanthemeswp/status/1006510213900488704","type":"rich","providerNameSlug":"twitter","responsive":true,"align":"wide","className":"wp-block-embed-twitter alignwide"} -->
+<figure class="wp-block-embed alignwide is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">
+https://twitter.com/artisanthemeswp/status/1006510213900488704
+</div><figcaption>This is a caption</figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:embed {"url":"https://twitter.com/artisanthemeswp/status/1006510213900488704","type":"rich","providerNameSlug":"twitter","responsive":true,"align":"full","className":"wp-block-embed-twitter alignfull"} -->
+<figure class="wp-block-embed alignfull is-type-rich is-provider-twitter wp-block-embed-twitter"><div class="wp-block-embed__wrapper">
+https://twitter.com/artisanthemeswp/status/1006510213900488704
+</div><figcaption>This is a caption</figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">YouTube Embed Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=qKJv4S5peJQ","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=qKJv4S5peJQ
+</div><figcaption>This is a caption</figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=qKJv4S5peJQ","type":"video","providerNameSlug":"youtube","responsive":true,"align":"wide","className":"wp-block-embed-youtube aligncenter wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed alignwide is-type-video is-provider-youtube wp-block-embed-youtube aligncenter wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=qKJv4S5peJQ
+</div><figcaption>Centered Video</figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=qKJv4S5peJQ","type":"video","providerNameSlug":"youtube","responsive":true,"align":"full","className":"wp-block-embed-youtube alignwide wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed alignfull is-type-video is-provider-youtube wp-block-embed-youtube alignwide wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=qKJv4S5peJQ
+</div><figcaption>Wide Video</figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=qKJv4S5peJQ","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-block-embed-youtube alignfull wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube alignfull wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=qKJv4S5peJQ
+</div><figcaption>Full width video</figcaption></figure>
+<!-- /wp:embed -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Facebook Embed Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Instagram Embed Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">WordPress Embed Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:separator -->
+<hr class="wp-block-separator"/>
+<!-- /wp:separator -->
+
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">File Block</h2>
+<!-- /wp:heading -->
+
+<!-- wp:file {"id":132,"href":"http://localhost:8888/pepperplus.com/wp-content/uploads/2018/08/Double_Espresso.mp4","showDownloadButton":false} -->
+<div class="wp-block-file"><a id="wp-block-file--media-24236d74-fdb8-4d5e-b57b-b3306bd1cb0b" href="http://localhost:8888/pepperplus.com/wp-content/uploads/2018/08/Double_Espresso.mp4">Double Espresso Video</a></div>
+<!-- /wp:file -->
+
+<!-- wp:file {"id":132,"href":"http://localhost:8888/pepperplus.com/wp-content/uploads/2018/08/Double_Espresso.mp4"} -->
+<div class="wp-block-file"><a id="wp-block-file--media-02d4e600-3daa-405f-9ecd-8adb378fef6b" href="http://localhost:8888/pepperplus.com/wp-content/uploads/2018/08/Double_Espresso.mp4">Double Espresso Video</a><a href="http://localhost:8888/pepperplus.com/wp-content/uploads/2018/08/Double_Espresso.mp4" class="wp-block-file__button" download aria-describedby="wp-block-file--media-02d4e600-3daa-405f-9ecd-8adb378fef6b">Download</a></div>
+<!-- /wp:file -->
+
+<!-- wp:file {"id":132,"href":"http://localhost:8888/pepperplus.com/wp-content/uploads/2018/08/Double_Espresso.mp4","align":"wide"} -->
+<div class="wp-block-file alignwide"><a id="wp-block-file--media-481f267d-f91d-4f14-889a-5b82c40d1bdf" href="http://localhost:8888/pepperplus.com/wp-content/uploads/2018/08/Double_Espresso.mp4">Double Espresso Video</a><a href="http://localhost:8888/pepperplus.com/wp-content/uploads/2018/08/Double_Espresso.mp4" class="wp-block-file__button" download aria-describedby="wp-block-file--media-481f267d-f91d-4f14-889a-5b82c40d1bdf">Download</a></div>
+<!-- /wp:file -->
+
+<!-- wp:file {"id":132,"href":"http://localhost:8888/pepperplus.com/wp-content/uploads/2018/08/Double_Espresso.mp4","align":"full"} -->
+<div class="wp-block-file alignfull"><a id="wp-block-file--media-d5d39492-ca85-4d99-b173-f6e199840567" href="http://localhost:8888/pepperplus.com/wp-content/uploads/2018/08/Double_Espresso.mp4">Double Espresso Video</a><a href="http://localhost:8888/pepperplus.com/wp-content/uploads/2018/08/Double_Espresso.mp4" class="wp-block-file__button" download aria-describedby="wp-block-file--media-d5d39492-ca85-4d99-b173-f6e199840567">Download</a></div>
+<!-- /wp:file -->
+
+<!-- wp:nextpage -->
+<!--nextpage-->
+<!-- /wp:nextpage -->
+
+<!-- wp:heading {"level":3} -->
+<h3>Congratulations!</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>You did it. There's nothing else to style :)</p>
+<!-- /wp:paragraph -->

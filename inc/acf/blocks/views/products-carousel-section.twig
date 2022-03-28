@@ -1,0 +1,55 @@
+{#
+/**
+ * Block Name: Products carousel section
+ *
+ * This is the template that displays the Products carousel section block.
+ */
+#}
+
+{% extends "block.twig" %}
+{% import "block-functions.twig" as functions %}
+{% import "block-snippets.twig" as snippets %}
+
+{% block block_content %}
+  {% set wrap_style = (products|length > 4) ? 'style="padding-bottom:30px;"' %}
+
+  {% if products is not empty %}
+    <div class="products-carousel-swiper uk-container uk-position-relative">
+      <div id="slideshow_products" class="swiper-container" {{ wrap_style }}>
+        <div class="swiper-wrapper">
+          {% for product in products %}
+            <div class="swiper-slide">
+              <div id="{{ product.id|e('esc_html') }}" class="product-item uk-text-center">
+                
+                {# term image #}
+                <a href="{{ product.link|e('esc_url') }}" class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                  <img class="uk-transition-scale-up uk-transition-opaque" src="{{ product.thumbnail.src|resize(560, 360, 'center')|e('esc_url') }}" alt="">
+                </a>
+                
+                {# term heading #}
+                <h3 class="uk-margin-small-top uk-h6">
+                  <a class="uk-link-heading" href="{{ product.link|e('esc_url') }}">{{ product.name|e('esc_html') }}</a>
+                </h3>
+                
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        {% if products|length > 4 %}
+          <div class="swiper-pagination"></div>
+        {% endif %}
+      </div>
+      {% if products|length > 4 %}
+        <div class="swiper-button-next swiper-button-next-unique"></div>
+        <div class="swiper-button-prev swiper-button-prev-unique"></div>
+      {% endif %}
+    </div>
+  {% else %}
+    {{ functions.preview_text(is_preview, snippets.no_products) }}
+  {% endif %}
+{% endblock %}
+
+{% block block_scripts %}
+  {% set _pagination = (products|length > 4) ? '.swiper-pagination' : false %}
+  {{ functions.block_swiper(is_preview, 'products_swiper', '#slideshow_products', {slidesPerView: 4, spaceBetween: 20, navigation: true, pagination: _pagination, navigation_nextele: '.swiper-button-next-unique', navigation_prevele: '.swiper-button-prev-unique'}) }}
+{% endblock %}

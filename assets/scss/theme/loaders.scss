@@ -1,0 +1,108 @@
+.no-overflow {
+  overflow: hidden;
+}
+// page ajax loader
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.preloader::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 45vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #f3f3f3;
+  border-top: 3px solid #525252;
+  border-radius: 100%;
+  will-change: transform;
+  animation: spin 1s infinite linear;
+  z-index: 5;
+}
+.preloader::after {
+  content: '';
+  position: absolute;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+}
+.preloader {
+  visibility: visible;
+  opacity: 5;
+  transition: opacity 0.4s linear;
+}
+.preloader.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.4s, opacity 0.4s linear;
+}
+// scroll loader
+.page-load-status {
+  display: none;
+  text-align: center;
+  color: #777;
+}
+.loader-ellips {
+  font-size: 20px;
+  position: relative;
+  width: 4em;
+  height: 1em;
+  margin: 10px auto;
+}
+.loader-ellips__dot {
+  display: block;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.5em;
+  background: $global-link-color;
+  position: absolute;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+.loader-ellips__dot:nth-child(1),
+.loader-ellips__dot:nth-child(2) {
+  left: 0;
+}
+.loader-ellips__dot:nth-child(3) {
+  left: 1.5em;
+}
+.loader-ellips__dot:nth-child(4) {
+  left: 3em;
+}
+@keyframes reveal {
+  from {
+    transform: scale(0.001);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes slide {
+  to {
+    transform: translateX(1.5em);
+  }
+}
+.loader-ellips__dot:nth-child(1) {
+  animation-name: reveal;
+}
+.loader-ellips__dot:nth-child(2),
+.loader-ellips__dot:nth-child(3) {
+  animation-name: slide;
+}
+.loader-ellips__dot:nth-child(4) {
+  animation-name: reveal;
+  animation-direction: reverse;
+}

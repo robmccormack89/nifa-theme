@@ -1,0 +1,44 @@
+{#
+/**
+ * Block Name: Testimonials
+ *
+ * This is the template that displays the Testimonials block.
+ */
+#}
+
+{% extends "block.twig" %}
+{% import "block-functions.twig" as functions %}
+{% import "block-snippets.twig" as snippets %}
+
+{% block block_content %}
+  
+  {% set wrap_style = (fields.testimonials|length > 1) ? 'style="padding-bottom:30px;"' %}
+
+  {% if fields.testimonials is not empty %}
+    <section class="uk-container uk-container-xsmall">
+      <div id="slideshow_tesimonials" class="swiper-container" {{ wrap_style }}>
+        
+        {# the slideshow loop #}
+        <div class="swiper-wrapper">
+          {% for testimonial in fields.testimonials %}
+            {% include '_testimonial.twig' %}
+          {% endfor %}
+        </div>
+        
+        {# the slideshow pagination #}
+        {% if fields.testimonials|length > 1 %}
+          <div class="swiper-pagination"></div>
+        {% endif %}
+        
+      </div>
+    </section>
+  {% else %}
+    {{ functions.preview_text(is_preview, snippets.no_testimonials()) }}
+  {% endif %}
+  
+{% endblock %}
+
+{% block block_scripts %}
+  {% set _pagination = (fields.testimonials|length > 1) ? '.swiper-pagination' : false %}
+  {{ functions.block_swiper(is_preview, 'tesimonials_swiper', '#slideshow_tesimonials', {autoplay: true, slidesPerView: 1, spaceBetween: 0, pagination: _pagination, pagination_dynamicBullets: true}) }}
+{% endblock %}

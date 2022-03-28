@@ -1,0 +1,338 @@
+/*!
+Theme Name: NIFA Theme
+Theme URI: https://github.com/robmccormack89
+Author: RobertMcCormack
+Author URI: https://github.com/robmccormack89
+Description: NIFA Theme is a fast, clean and modern-looking responsive WooCommerce theme for WordPress. The theme is responsive, super fast, SEO friendly, WPML and RTL ready. This theme is built with frontend-framework UiKit (https://getuikit.com/docs/introduction) & wordpres theme-building framework Timber (https://upstatement.com/timber/). This theme also includes Font Awesome icons set (https://fontawesome.com/icons) & Google Font: Nunito (https://fonts.google.com/specimen/Nunito).
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: nifa-theme
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Rmcc Theme is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Rmcc Theme is built using Timber WP https://github.com/timber/timber
+*/
+
+/* font application */
+html,
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6,
+.uk-logo,
+.uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* base */
+html {
+  -webkit-text-size-adjust: 100%;
+  background: #fff;
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* headings */
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, .uk-heading-2xlarge, .uk-heading-large, .uk-heading-medium, .uk-heading-small, .uk-heading-xlarge, h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-weight: 600;
+  margin: 0 0 20px;
+  text-transform: none;
+}
+
+/* font weights */
+.uk-text-bold,
+.uk-text-meta,
+.uk-text-lead {
+  font-weight: 500;
+}
+.uk-text-bolder {
+  font-weight: 600;
+}
+.uk-text-boldest,
+.footer-bottom h4,
+.footer-top .uk-h4,
+.uk-logo,
+.uk-navbar-item.uk-logo {
+  font-weight: 700;
+}
+
+/* red */
+.uk-background-primary,
+.uk-button-primary,
+.uk-button-primary:focus, .uk-button-primary:hover {
+  background-color: #cf372d;
+}
+.uk-text-primary {
+  color: #cf372d!important;
+}
+.uk-button-text:before {
+  border-bottom: 1px solid #cf372d;
+}
+.uk-link-heading a:hover, .uk-link-toggle:focus .uk-link-heading, .uk-link-toggle:hover .uk-link-heading, a.uk-link-heading:hover {
+  color: #cf372d;
+}
+.uk-offcanvas-bar .uk-text-primary,
+.uk-light .uk-text-primary {
+  color: #cf372d!important;
+}
+/* buttons */
+.uk-light .uk-button-primary {
+  background-color: #cf372d;
+  color: #fff;
+}
+
+/* navbar/s */
+.uk-navbar-nav>li>a {
+  color: #999;
+  text-transform: capitalize;
+}
+.uk-navbar-item, .uk-navbar-nav>li>a, .uk-navbar-toggle {
+  font-weight: 500;
+  min-height: 80px;
+  padding: 0 15px;
+}
+.uk-navbar-item .theme-border {
+  border: 1px solid #e5e5e554;
+}
+/* navbar dropdown */
+.uk-navbar-dropdown {
+  background: #fff;
+  box-shadow: 0 5px 12px rgb(0 0 0 / 15%);
+  box-sizing: border-box;
+  color: #666;
+  display: none;
+  padding: 15px 15px;
+  position: absolute;
+  width: 200px;
+  z-index: 1020;
+}
+/* subnav */
+.uk-subnav>*>:first-child {
+  color: #999;
+  display: block;
+  font-size: .875rem;
+  text-transform: capitalize;
+  transition: .1s ease-in-out;
+  transition-property: color,background-color;
+}
+/* offcanvas */
+.uk-offcanvas-bar {
+  background: #1e1e1e;
+  left: -80%;
+  padding: 20px;
+  width: 80%;
+}
+/* sticky nav */
+.uk-sticky-below {
+  left: 0px!important;
+  position: fixed!important;
+  top: 0px!important;
+  width: 100%!important;
+}
+.uk-sticky-below .uk-navbar-item, 
+.uk-sticky-below .uk-navbar-nav>li>a, 
+.uk-sticky-below .uk-navbar-toggle {
+  min-height: 60px;
+  padding: 0 15px;
+}
+.uk-sticky-fixed {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/* navbar nav active menu item */
+.uk-navbar-nav > li.current-menu-ancestor, 
+.uk-navbar-nav > li.current-menu-item,
+.uk-navbar-nav > li.uk-active {
+  position: relative;
+}
+.uk-navbar-nav > li.current-menu-ancestor > a:after, 
+.uk-navbar-nav > li.current-menu-item > a:after,
+.uk-navbar-nav > li.uk-active > a:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  left: 15%;
+  right: 0;
+  pointer-events: none;
+  height: 4px;
+  width: 70%;
+  background-color: #FBBD02;
+}
+
+/* overlays */
+.uk-overlay {
+  padding-left: 0;
+  padding-right: 0;
+}
+.uk-overlay-primary {
+  background: rgb(34 34 34 / 40%);
+}
+
+/* breads icon */
+#breadcrumbs .fa-xs {
+  font-size: .2em;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+/* footer */
+.footer-bottom .uk-divider-small:after {
+  border-top: 3px solid #cf372d;
+  content: "";
+  display: inline-block;
+  max-width: 100%;
+  vertical-align: top;
+  width: 60px;
+}
+.footer-bottom .uk-list,
+.footer-bottom .footer-bottom-bottom {
+  font-family: "Roboto",Arial,sans-serif;
+}
+.footer-bottom .uk-list {
+  padding: 0;
+  margin: 0;
+  columns: 2;
+  column-gap: 0;
+  color: #000;
+  font-size: 15px;
+}
+.footer-bottom .uk-list li {
+  padding-bottom: 5px;
+}
+.footer-bottom .uk-button-small.uk-button-primary {
+  margin-bottom: 5px;
+  font-size: .75rem;
+}
+.footer-bottom > hr {
+  border-top: 3px solid #cf372d;
+  margin: 0 0 0;
+}
+
+/* responsive */
+@media only screen and (min-device-width:960px) and (max-device-width:1250px) {
+}
+@media only screen and (min-device-width:940px) and (max-device-width:1085px) {
+}
+@media only screen and (max-width:959px) {
+  .uk-text-lead {
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  .site-header > .uk-container {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+  }
+  .sticky-wrap {
+     padding-left: 20px;
+     padding-right: 20px;
+  }
+}
+@media only screen and (min-width:960px) {
+  .uk-sticky-below .sticky-wrap {
+     padding-left: 20px;
+     padding-right: 20px;
+  }
+}
+
+/* // follow the socials section */
+.block.block__social {
+  text-align: center;
+  margin-top: 20px;
+}
+.block.block__social .social, .block.block__social h6 {
+  display: inline-block;
+}
+.block.block__social h6 {
+  margin-right: 10px;
+}
+.social {
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+.social .social--item {
+  display: inline-block;
+  margin-right: 5px;
+}
+.social .social--item a {
+  display: block;
+  position: relative;
+  text-align: center;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  -webkit-transition: background-color .1s ease-in-out;
+  -moz-transition: background-color .1s ease-in-out;
+  -ms-transition: background-color .1s ease-in-out;
+  -o-transition: background-color .1s ease-in-out;
+  transition: background-color .1s ease-in-out;
+}
+.social .social--item a i {
+  line-height: 32px;
+  -webkit-transition: color .1s ease-in-out;
+  -moz-transition: color .1s ease-in-out;
+  -ms-transition: color .1s ease-in-out;
+  -o-transition: color .1s ease-in-out;
+  transition: color .1s ease-in-out;
+}
+.social .social--item a {
+  background-color: #cf372d;
+}
+.uk-light .social .social--item a {
+  background-color: #cf372d;
+}
+.social .social--item a i {
+  color: #fff;
+}
+.uk-light .social .social--item a i {
+  color: #fff;
+}
+.social .social--item:active a, .social .social--item:hover a {
+  background-color: #cf372d;
+}
+.uk-light .social .social--item:active a i, .uk-light .social .social--item:hover a i {
+  color: #fff;
+}
+
+/* general */
+
+.mobile-menu-toggle-wrap {
+  padding: 10px 12px; 
+}
+
+.article-meta>:not(:last-child)::after {
+  content: "•";
+  margin-left: 5px;
+  position: absolute;
+  display: inline-block;
+  font-weight: 700;
+}
+.article-meta>:not(:first-child) {
+  margin-left: 18px;
+}
+
+.uk-form-small {
+  height: 30px;
+}
+
+.uk-position-z-index {
+  z-index: 3;
+}
+
+.uk-overlay-primary {
+  background: rgb(20 20 20 / 79%);
+}
+
+#SiteFooter .uk-overlay-primary,
+.page-header .uk-overlay-primary {
+  background: rgb(34 34 34 / 40%);
+}

@@ -1,0 +1,10 @@
+{
+  "require": {
+    "timber/timber": "^1.19.0",
+    "twig/string-extra": "^3.3",
+    "twig/extra-bundle": "^3.3"
+  },
+  "autoload": {
+      "psr-4": { "Rmcc\\": ["inc/", "inc/acf/", "inc/acf/blocks/"] }
+  }
+}

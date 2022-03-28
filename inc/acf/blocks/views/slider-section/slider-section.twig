@@ -1,0 +1,38 @@
+{#
+/**
+ * Block Name: Slider section
+ *
+ * This is the template that displays the Cover section block.
+ */
+#}
+
+{% extends "block.twig" %}
+{% import "block-functions.twig" as functions %}
+{% import "block-snippets.twig" as snippets %}
+
+{% block block_content %}
+  {% if fields.slides is not empty %}
+    <div id="slideshow_banner" class="swiper-container">
+      
+      {# the slideshow loop #}
+      <div class="swiper-wrapper">
+        {% for slide in fields.slides %}
+          {% include '_slide.twig' %}
+        {% endfor %}
+      </div>
+      
+      {# the slideshow pagination #}
+      {% if fields.slides|length > 1 %}
+        <div class="swiper-pagination"></div>
+      {% endif %}
+      
+    </div>
+  {% else %}
+    {{ functions.preview_text(is_preview, snippets.no_slides()) }}
+  {% endif %}
+{% endblock %}
+
+{% block block_scripts %}
+  {% set _pagination = (fields.slides|length > 1) ? '.swiper-pagination' : false %}
+  {{ functions.block_swiper(is_preview, 'slider_swiper', '#slideshow_banner', {centeredSlides: true, autoplay: true, pagination: _pagination, pagination_type: 'progressbar'}) }}
+{% endblock %}

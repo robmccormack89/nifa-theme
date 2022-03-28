@@ -1,0 +1,23 @@
+{#
+/**
+ * Block Name: Featured items section
+ *
+ * This is the template that displays the Featured pages section block.
+ */
+#}
+
+{% extends "block.twig" %}
+{% import "block-functions.twig" as functions %}
+{% import "block-snippets.twig" as snippets %}
+
+{% block block_content %}
+  {% if items is not empty %}
+    <div class="featured-items-block uk-grid-match uk-flex uk-flex-middle uk-grid-collapse uk-background-primary uk-light uk-text-center uk-grid" uk-grid>
+      {% for item in items %}
+        {% include '_featured-item.twig' %}
+      {% endfor %}
+    </div>
+  {% else %}
+    {{ functions.preview_text(is_preview, snippets.no_featured_items()) }}
+  {% endif %}
+{% endblock %}

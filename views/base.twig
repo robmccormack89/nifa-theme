@@ -1,0 +1,47 @@
+{% import "functions.twig" as functions %}
+    
+{% block html_head_container %}
+
+  {% include '_html-header.twig' %}
+    {% block styles %}
+    {% endblock %}
+  </head>
+  {% endblock %}
+
+  <body class="{{ body_class }}">
+    
+    {% if theme_config.theme_preloader %}
+      <div id="Preloader" class="preloader"></div>
+    {% endif %}
+
+    {% block header %}
+      {% include 'header.twig' %}
+    {% endblock %}
+    
+    <main id="Main" role="main" style="background-color: #fff;">
+      {% block main %}
+        Sorry, nothing to display here...
+      {% endblock %}
+    </main>
+    
+    {% block footer %}
+      {% include 'footer.twig' %}
+    {% endblock %}
+    
+    {{ function('wp_footer') }}
+    
+    {% if theme_config.theme_preloader %}
+      <script type='text/javascript'>
+        document.body.onload = function(){
+          document.getElementById("Preloader").classList.add("hidden");
+          document.getElementsByTagName("BODY")[0].classList.remove("no-overflow");
+        }
+      </script>
+    {% endif %}
+    
+    {% block scripts %}
+    {% endblock %}
+    
+  </body>
+
+</html>

@@ -1,0 +1,51 @@
+<!-- wp:acf/cover-section {"id":"block_623c8911f5596","name":"acf/cover-section","data":{"field_61d76f01c14b7":"460","field_620e46bf11699":"\u003cp style=\u0022text-align: center; margin: 0;\u0022\u003eWorking hours: Mon - Sat 8.00 - 18.00 | Call Us: +353 44 9345884\u003c/p\u003e"},"align":"full","mode":"preview","full_height":false} -->
+<!-- wp:heading {"textAlign":"center","style":{"typography":{"fontSize":"52px"}},"className":"uk-text-boldest"} -->
+<h2 class="has-text-align-center uk-text-boldest" style="font-size:52px">Heading</h2>
+<!-- /wp:heading -->
+<!-- /wp:acf/cover-section -->
+
+<!-- wp:acf/cta-section {"id":"block_623c87b9f558e","name":"acf/cta-section","data":{"field_61d756573afe1":"#dd3333","field_6220f490bf828":"enabled"},"align":"full","mode":"preview"} -->
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Heading</h2>
+<!-- /wp:heading -->
+<!-- /wp:acf/cta-section -->
+
+<!-- wp:acf/highlight-card-section {"id":"block_623c87bdf558f","name":"acf/highlight-card-section","data":{"field_6221629a4ffd1":"right","field_6221629a50311":"476"},"align":"full","mode":"preview","align_content":"center"} -->
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Heading</h2>
+<!-- /wp:heading -->
+
+<!-- wp:acf/video-popup-button {"id":"block_623c87c8f5592","name":"acf/video-popup-button","data":{"field_61d6ff16b532a":"","field_622170bc65eb5":"dark"},"align":"","mode":"preview","align_text":"center"} /-->
+
+<!-- wp:acf/gallery-button {"id":"block_623c87ccf5593","name":"acf/gallery-button","data":{"field_61d867329e0e4":["476","475","474","473"],"field_62111331a43dd":"Launch Gallery","field_622176f5a58b0":""},"align":"","mode":"preview","align_text":"center"} /-->
+<!-- /wp:acf/highlight-card-section -->
+
+<!-- wp:acf/half-and-half-section {"id":"block_623c87b2f558c","name":"acf/half-and-half-section","data":{"field_61d6f23c2068b":"476","field_620e7b33c8ad2":"right","field_6220ea51b4656":"#dd3333","field_6220eac8b4658":"enabled"},"align":"full","mode":"preview","align_content":"center"} -->
+<!-- wp:heading -->
+<h2>Heading</h2>
+<!-- /wp:heading -->
+<!-- /wp:acf/half-and-half-section -->
+
+<!-- wp:spacer {"height":"40px"} -->
+<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:acf/testimonials-section {"id":"block_623c87c5f5591","name":"acf/testimonials-section","data":{"field_620291fda64ce":{"623c89cef5599":{"field_60d37f52d3310":"5","field_6202923ba64d0":"\u0022Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt\u0022","field_6202922ca64cf":"- One happy customer"},"623c89cff559a":{"field_60d37f52d3310":"5","field_6202923ba64d0":"\u0022Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt\u0022","field_6202922ca64cf":"- Another happy customer"}}},"align":"center","mode":"preview","align_text":"center"} /-->
+
+<!-- wp:spacer {"height":"40px"} -->
+<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:acf/featured-items-row {"id":"block_623c87cff5594","name":"acf/featured-items-row","data":{"field_61d741c2b5996":{"623c89d7f559b":{"field_61d7426a0bbed":"","field_61d741c2b6aaa":"","field_61d741c2b65b0":"","field_61d742e20bbee":""},"623c89d8f559c":{"field_61d7426a0bbed":"","field_61d741c2b6aaa":"","field_61d741c2b65b0":"","field_61d742e20bbee":""},"623c89d9f559d":{"field_61d7426a0bbed":"","field_61d741c2b6aaa":"","field_61d741c2b65b0":"","field_61d742e20bbee":""}}},"align":"full","mode":"preview","align_content":"center center"} /-->
+
+<!-- wp:spacer {"height":"40px"} -->
+<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:acf/products-carousel-section {"id":"block_623c87d3f5595","name":"acf/products-carousel-section","data":{"field_622c851518cb4":["1093","1416","1418","1095","1427","1105","1421"]},"align":"","mode":"preview"} /-->
+
+<!-- wp:spacer {"height":"40px"} -->
+<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:acf/slider-section {"id":"block_623c87c1f5590","name":"acf/slider-section","data":{"field_61e4f0b9dbac3":{"623c89c1f5597":{"field_61e4f0a3842ab":"","field_61e4f0a38469b":"Heading","field_61e4f0a384a68":"","field_61e4f0a384e54":"","field_61e4f0a3851bf":"","field_61e50b1f96f75":""},"623c89c6f5598":{"field_61e4f0a3842ab":"","field_61e4f0a38469b":"Heading","field_61e4f0a384a68":"","field_61e4f0a384e54":"","field_61e4f0a3851bf":"","field_61e50b1f96f75":""}}},"align":"full","mode":"preview","align_text":"center","align_content":"center"} /-->

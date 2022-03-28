@@ -1,0 +1,49 @@
+{% import "block-functions.twig" as functions %}
+
+{% set _img_h = (fullheight) ? 975 : ((slide.height == 'large') ? 450 : ((slide.height == 'medium') ? 300 : ((slide.height == 'small') ? 150 : null))) %}
+{% set _placeholder_h = (fullheight) ? '975' : ((slide.height == 'large') ? '450' : ((slide.height == 'medium') ? '300' : ((slide.height == 'small') ? '150' : '500'))) %}
+
+{% set img_class = 'block-img cover-img' ~ ((fullheight) ? ' home-cover-img' : ((slide.height) ? ' uk-height-' ~ slide.height : '')) %}
+
+{% set _the_image = (slide.img) ? Image(slide.img) : null %}
+{% set img_src = _the_image.src|resize(1920, _img_h, 'center')|default('https://picsum.photos/id/1' ~ loop.index ~ '/1920/' ~ _placeholder_h) %}
+{% set img_alt = _the_image.alt %}
+
+<div class="swiper-slide">
+  <div class="uk-inline headercover">
+    
+    {# slide item image #}
+    {{ functions.block_img(is_preview, img_src, img_alt, {class: img_class, coverheight: fullheight}) }}
+    
+    {# slide item overlayed content #}
+    {% if slide.heading or slide.msg or (slide.btn_txt and slide.btn_url) %}
+      <div class="uk-position-cover uk-overlay uk-overlay-primary overlay-contained">
+        <div class="uk-position-cover uk-container uk-container-large uk-flex uk-flex-{{ align_content|e('esc_html') }} uk-flex-{{ align_text|e('esc_html') }} uk-text-{{ align_text|e('esc_html') }}">
+          <div class="slide-content uk-padding uk-padding-remove-horizontal">
+            
+            {# slide heading #}
+            {% if slide.heading %}
+              <h1 class="uk-margin-remove-top">{{ slide.heading|e('esc_html') }}</h1>
+            {% endif %}
+            
+            {# slide message #}
+            {% if slide.msg %}
+              {% set msg_class = (slide.btn_txt and slide.btn_url) ? 'uk-margin-medium-bottom' : 'uk-margin-remove-bottom' %}
+              <hr class="uk-divider-small">
+              <p class="uk-text-emphasis uk-text-lead {{ msg_class }}">
+                {{ slide.msg|e('esc_html') }}
+              </p>
+            {% endif %}
+            
+            {# slide btn (text & url) #}
+            {% if slide.btn_txt and slide.btn_url %}
+              {{ functions.block_link(is_preview, slide.btn_url, slide.btn_txt, {class: 'uk-button uk-button-default uk-button-large scroll'}) }}
+            {% endif %}
+            
+          </div>
+        </div>
+      </div>
+    {% endif %}
+    
+  </div>
+</div>

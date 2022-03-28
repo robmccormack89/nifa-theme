@@ -1,0 +1,65 @@
+{
+    "key": "group_61d6feddd992e",
+    "title": "Video popup button",
+    "fields": [
+        {
+            "key": "field_61d6ff16b532a",
+            "label": "Video embed url",
+            "name": "embed_url",
+            "type": "url",
+            "instructions": "When viewing a Youtube video, click Share, then Embed, then within the code on the right-hand side, grab the embed url",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "https:\/\/www.youtube.com\/embed\/abcdef"
+        },
+        {
+            "key": "field_622170bc65eb5",
+            "label": "Light\/Dark",
+            "name": "lightdark",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "dark": "Dark",
+                "light": "Light"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "dark",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/video-popup-button"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 1,
+    "modified": 1647022436
+}

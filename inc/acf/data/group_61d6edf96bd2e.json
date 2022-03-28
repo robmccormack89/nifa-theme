@@ -1,0 +1,114 @@
+{
+    "key": "group_61d6edf96bd2e",
+    "title": "Half & Half section",
+    "fields": [
+        {
+            "key": "field_61d6f23c2068b",
+            "label": "Image",
+            "name": "img",
+            "type": "image",
+            "instructions": "A placeholder (1080x675) will be used when image is not set",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_620e7b33c8ad2",
+            "label": "Layout",
+            "name": "layout",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "left": "Left content",
+                "right": "Right content"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "left",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        },
+        {
+            "key": "field_6220ea51b4656",
+            "label": "Background color",
+            "name": "bg_color",
+            "type": "color_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "#f8f8f8",
+            "enable_opacity": 0,
+            "return_format": "string"
+        },
+        {
+            "key": "field_6220eac8b4658",
+            "label": "Light mode (light text)",
+            "name": "light_mode",
+            "type": "radio",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "disabled": "Disabled",
+                "enabled": "Enabled"
+            },
+            "allow_null": 0,
+            "other_choice": 0,
+            "default_value": "disabled",
+            "layout": "vertical",
+            "return_format": "value",
+            "save_other_choice": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/half-and-half-section"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 1,
+    "modified": 1647022457
+}

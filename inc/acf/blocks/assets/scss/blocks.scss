@@ -1,0 +1,90 @@
+@import "node_modules/lightgallery.js/src/sass/lightgallery.scss";
+
+.rmcc-block .uk-height-small {
+  height: 150px!important;
+}
+.rmcc-block .uk-height-medium {
+  height: 300px!important;
+}
+.rmcc-block .uk-height-large {
+  height: 450px!important;
+}
+
+// cover section
+.overlay-contained {
+  overflow: hidden
+}
+.theme-position {
+  position: absolute;
+  box-sizing: border-box;
+  width: -webkit-fill-available;
+  max-width: 100%;
+}
+.position-middle {
+  top: 50%;
+  transform: translate(-30px,-50%);
+}
+.position-top {
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.position-bottom {
+  top: auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+// products carousel section
+.products-carousel-swiper .swiper-button-next:after, 
+.products-carousel-swiper .swiper-button-prev:after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.products-carousel-swiper .swiper-button-next.swiper-button-disabled, 
+.products-carousel-swiper .swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
+}
+.products-carousel-swiper .swiper-button-prev:after, 
+.products-carousel-swiper .swiper-container-rtl .swiper-button-next:after,
+.products-carousel-swiper .swiper-button-next:after, 
+.products-carousel-swiper .swiper-container-rtl .swiper-button-prev:after {
+    /* content: 'prev'; */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 28px;
+  color: #bfbfbf;
+}
+.products-carousel-swiper .swiper-button-prev:after, 
+.products-carousel-swiper .swiper-container-rtl .swiper-button-next:after {
+  content: "\f053";
+}
+.products-carousel-swiper .swiper-button-next:after, 
+.products-carousel-swiper .swiper-container-rtl .swiper-button-prev:after {
+  content: "\f054";
+}
+
+// sswiper pagination
+.swiper-pagination-bullet-active,
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background: #cf372d!important;
+}
+
+// video popup section
+.video-container__play svg {
+  width: 80px;
+  height: 80px;
+  fill: transparent;
+  stroke: #0e0e0e;
+}
+
+// testimonials section
+.testimonials__star {
+  margin: 0 2px;
+  color: #eeaf2e;
+}
+

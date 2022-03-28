@@ -1,0 +1,93 @@
+{% import "snippets.twig" as snippets %}
+{% extends 'base.twig' %}
+
+{% block main %}
+
+  {% block archive_header %}
+    <header class="page-header uk-light uk-background-cover" style="background-image: url({{theme.link}}/assets/img/hero_inner_page.jpg)">
+      <div class="uk-overlay uk-overlay-primary">
+        <div id="PageHeaderWrap" class="uk-container uk-margin-medium-bottom">
+          
+          {% block archive_header_breads %}
+            <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+              <div class="uk-navbar-left">
+                <div class="uk-navbar-item uk-text-uppercase pull-left-15">
+                  {{ fn('yoast_breadcrumb', '<div id="breadcrumbs">','</div>') }}
+                </div>
+              </div>
+            </nav>
+          {% endblock %}
+          
+          {% block archive_header_title %}
+            <h1 class="uk-margin-remove">{{ title|e('esc_html') }}</h1>
+          {% endblock %}
+          
+        </div>
+      </div>
+    </header>
+  {% endblock %}
+  
+  {% block archive_loop %}
+    <section class="uk-section uk-container">
+      {% if posts is not empty %}
+        <div class="uk-child-width-1-2@s uk-child-width-1-3@m uk-grid-small uk-grid" uk-grid>
+          {% for post in posts %}
+            {% include ['_tease-'~post.post_type~'.twig', '_tease.twig'] %}
+          {% endfor %}
+        </div>
+        {% else %}
+          Sorry, no items found...
+        {% endif %}
+    </section>
+  {% endblock %}
+  
+  {% block archive_footer %}
+    <footer class="archive-footer">
+      {% if (posts.pagination.next or posts.pagination.prev) %}
+        <nav class="pagination uk-section uk-padding-remove-top">
+          <ul class="uk-pagination uk-flex-center uk-margin-remove">
+            
+            {% if posts.pagination.prev %}
+              <li>
+                <a href="{{ posts.pagination.prev.link|e('esc_url') }}" class="prev">
+                  {{ icons.left_pagi_icon }} {{ snippets.prev_page|e('esc_html') }}
+                </a>
+              </li>
+            {% endif %}
+            
+            {% for page in posts.pagination.pages %}
+              <li>
+                {% if page.link %}
+                  <a href="{{ page.link|e('esc_url') }}" class="{{ page.class|e('esc_html') }}">{{ page.title|e('esc_html') }}</a>
+                {% else %}
+                  <span class="{{ page.class|e('esc_html') }}">{{ page.title|e('esc_html') }}</span>
+                {% endif %}
+              </li>
+            {% endfor %}
+            
+            {% if posts.pagination.next %}
+              <li>
+                <a href="{{ posts.pagination.next.link|e('esc_url') }}" class="next">
+                  {{ snippets.next_page|e('esc_html') }} {{ icons.right_pagi_icon }}
+                </a>
+              </li>
+            {% endif %}
+            
+          </ul>
+        </nav>
+      {% endif %}
+    </footer>
+  {% endblock %}
+  
+{% endblock %}
+
+{% block scripts %}
+  <script type='text/javascript'>
+    window.onload = function() {
+      var element = document.getElementById("SiteHeader");
+      let computedStyle = getComputedStyle(element);
+      var height = computedStyle.height;
+      document.getElementById("PageHeaderWrap").style.marginTop = height;
+    }
+  </script>
+{% endblock %}

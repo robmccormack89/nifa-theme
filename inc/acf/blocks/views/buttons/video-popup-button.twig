@@ -1,0 +1,37 @@
+{#
+/**
+ * Block Name: Video popup section
+ *
+ * This is the template that displays the Video popup section block.
+ */
+#}
+
+{% extends "block.twig" %}
+{% import "block-functions.twig" as functions %}
+{% import "block-icons.twig" as icons %}
+
+{% block block_content %}
+  {% set _img_h = (fullheight) ? '975' : null %}
+  {% set _placeholder_h = (fullheight) ? '975' : '500' %}
+  {% set img_src = _block_img.src|resize(1920, _img_h)|default('https://picsum.photos/id/' ~ default_theme_img_id ~ '/1920/' ~ _placeholder_h) %}
+  {% set img_alt = _block_img.alt %}
+  {% set anchor_link = '#' ~ block.id|e('esc_html') %}
+  
+  {% if fields.lightdark == 'light' %}
+    <style>.video-container__play svg {stroke: #fff!important;}</style>
+  {% endif %}
+  
+  <div class="uk-inline uk-flex uk-flex-{{ align_text|e('esc_html') }}">
+    {{ functions.block_link_open(is_preview, anchor_link, {class: 'video-container__play', attr: 'uk-toggle'}) }}
+      {{ icons.youtube_btn_icon }}
+    {{ functions.block_link_close(is_preview) }}
+  </div>
+  {% if embed_url %}
+    <div id="{{ block.id|e('esc_html') }}" class="uk-flex-top" uk-modal>
+      <div class="uk-modal-dialog uk-width-auto uk-margin-auto-vertical">
+        <button class="uk-modal-close-outside" type="button" uk-close></button>
+        {{ functions.iframe(embed_url, {w: '1920', h: '800'}) }}
+      </div>
+    </div>
+  {% endif %}
+{% endblock %}

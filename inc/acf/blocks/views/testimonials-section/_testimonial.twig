@@ -1,0 +1,33 @@
+{% import "block-icons.twig" as icons %}
+{% import "block-functions.twig" as functions %}
+
+{% if (testimonial.rating or testimonial.message or testimonial.heading)  %}
+  <div class="swiper-slide">
+    <div class="testimonial uk-text-{{align_text|e('esc_html') }}">
+      
+      {# testimonial rating #}
+      {% if testimonial.rating %}
+        <div class="testimonials__star-rating">
+          {% for i in 1..testimonial.rating|e('esc_html') %}
+            {{ icons.star() }}
+          {% endfor %}
+        </div>
+      {% endif %}
+      
+      {# testimonial content #}
+      {% if testimonial.message %}
+        <p class="uk-h3 uk-margin-top uk-margin-remove-bottom">
+          {{ testimonial.message|e('esc_html') }}
+        </p>
+      {% endif %}
+      
+      {# testimonial title #}
+      {% if testimonial.heading %}
+        <p class="uk-margin-top uk-margin-remove-bottom">
+          {{ testimonial.heading|e('esc_html') }}
+        </p>
+      {% endif %}
+      
+    </div>
+  </div>
+{% endif %}

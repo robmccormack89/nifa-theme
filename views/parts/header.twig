@@ -1,0 +1,228 @@
+{% import "snippets.twig" as snippets %}
+
+{# header & main menu: sticks to top #}
+<header id="SiteHeader" class="site-header uk-position-top uk-position-z-index uk-wwidth-1-1">
+  <div class="uk-container">
+    
+    <div class="header-top uk-background-secondary uk-light uk-visible@m">
+      <div class="uk-container uk-padding-ssmall uk-text-small">
+        <div class="uk-flex-middle uk-grid-small" uk-grid>
+
+          {# header top left #}
+          <div class="uk-width-1-1 uk-width-expand@m uk-text-center uk-text-left@m">
+            <span>{{ snippets.header_left_text()|e('esc_html') }}</span>
+          </div>
+          
+          {# header top right #}
+          <div class="uk-width-1-1 uk-width-auto@m uk-text-center uk-text-right@m">
+            <div>
+              <div class="uk-flex uk-flex-middle uk-grid-small" uk-grid>
+                <div>
+                  <ul class="uk-subnav uk-subnav-dividerr">
+                    {% if has_menu_iconnav %}
+                      {% for item in menu_iconnav.get_items %}
+                        <li class="{{ item.classes|join(' ')|e('esc_html') }}">
+                          <a href="{{ item.get_link|e('esc_url') }}" class="uk-text-emphasis">
+                            {{ item.title|e('wp_kses_post')}}
+                          </a>
+                        </li>
+                      {% endfor %}
+                      <li class="">
+                        <a href="#ModalSearch" class="uk-text-emphasis" uk-toggle>
+                          <i class="fas fa-search"></i>
+                        </a>
+                      </li>
+                    {% else %}
+                      *Iconnav Menu
+                    {% endif %}
+                  </ul>
+                </div>
+                {% if has_menu_contact %}
+                  <div>
+                    {% for item in menu_contact.get_items %}
+                      <a href="{{ item.link|e('esc_html') }}" class="uk-button uk-button-primary uk-button-small uk-margin-left uk-text-boldest">{{ item.title|e('esc_html') }}</a>
+                    {% endfor %}
+                  </div>
+                {% else %}
+                  <div>
+                    *Contact Menu
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="header-main uk-background-primary uk-light" uk-sticky="cls-active: uk-width-1-1; cls-inactive: uk-container;animation: uk-animation-slide-top">
+      <div class="uk-containerr uk-padding-ssmall sticky-wrap">
+        <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+          
+          <div class="uk-navbar-left">
+            <a class="uk-navbar-item uk-logo uk-text-emphasis uk-padding-remove" href="{{ site.url|e('esc_url') }}">
+              {% if theme_logo_src %}
+                <img src="{{ theme_logo_src|e('esc_url') }}" width="319" height="58" alt="logo">
+              {% else %}
+                {{ site.title|e('esc_html') }}
+              {% endif %}
+            </a>
+          </div>
+          
+          <div class="uk-navbar-right uk-visible@m">
+            {% if has_menu_main  %}
+              <ul class="uk-navbar-nav">
+                {% for item in menu_main.get_items %}
+                  {% if item.get_children %}
+                    <li class="{{ item.classes|join(' ')|e('esc_html') }}">
+                      <a href="{{ item.get_link|e('esc_url') }}">{{ item.title|e('esc_html') }}</a>
+                      <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                          {% for child in item.get_children %}
+                            <li class="{{ child.classes|join(' ')|e('esc_html') }}">
+                              <a href="{{ child.get_link|e('esc_url') }}">{{ child.title|e('esc_html') }}</a>
+                              {% if child.children %}
+                                <div class="uk-navbar-dropdown" uk-dropdown="pos: right-top">
+                                  <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    {% for third in child.children %}
+                                      <li class="{{ third.classes|join(' ')|e('esc_html') }}">
+                                        <a href="{{ third.get_link|e('esc_url') }}">{{ third.title|e('esc_html') }}</a>
+                                      </li>
+                                    {% endfor %}
+                                  </ul>
+                                </div>
+                              {% endif %}
+                            </li>
+                          {% endfor %}
+                        </ul>
+                      </div>
+                    </li>
+                  {% else %}
+                    <li class="{{ item.classes|join(' ')|e('esc_html') }}">
+                      <a href="{{ item.link|e('esc_url') }}">{{ item.title|e('esc_html') }}</a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+            {% else %}
+              *Main Menu
+            {% endif %}
+          </div>
+          
+          {% if has_menu_mobile %}
+            <div class="uk-navbar-right uk-hidden@m">
+              <div class="uk-navbar-item pull-right-15">
+                <div class="mobile-menu-toggle-wrap theme-border uk-border-rounded">
+                  <a href="#MobileOffCanvas" uk-toggle><i class="fas fa-bars fa-lg"></i></a>
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        
+        </nav>
+      </div>
+    </div>
+  
+  </div>
+</header>
+
+{# search form (modal) #}
+<div id="ModalSearch" class="uk-modal-full uk-modal" uk-modal>
+  <div class="uk-modal-dialog uk-flex uk-flex-center uk-flex-middle" uk-height-viewport>
+    <button class="uk-modal-close-full" type="button" uk-close></button>
+    <form class="uk-search uk-search-large" role="search" method="get" action="{{site.url}}">
+      <input id="header-search" class="uk-search-input uk-text-center" type="search" name="s" placeholder="{{snippets.searchform_text}}" 
+      required maxlength="100" pattern=".*\S+.*" autocomplete="off" autofocus>
+      <input type="hidden" name="post_type" value="product" />
+    </form>
+  </div>
+</div>
+
+{# mobile menu offcanvas #}
+{% if has_menu_mobile %}
+  <nav id="MobileOffCanvas" class="mobile-slide-navbar" uk-offcanvas="mode: push; overlay: true">
+    <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+      <a class="uk-offcanvas-close uk-text-primary">
+       <i class="fas fa-times fa-lg"></i>
+      </a>
+      
+        <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+          <li class="uk-nav-header uk-text-boldest uk-logo uk-h5 uk-margin-remove uk-width-5-6">
+            {% if theme_logo_src %}
+              <img src="{{ theme_logo_src|e('esc_url') }}" width="319" height="58" alt="logo">
+            {% else %}
+              {{ site.title|e('esc_html') }}
+            {% endif %}
+          </li>
+          <li class="uk-nav-divider"></li>
+          {% if has_menu_mobile %}
+            {% for item in menu_mobile.get_items %}
+              {% if item.get_children %}
+                <li class="{{ item.classes|join(' ')|e('esc_html') }} uk-parent">
+                  <a href="{{ item.link|e('esc_url') }}">{{ item.title|e('esc_html')}}</a>
+                  <ul class="uk-nav-sub">
+                    {% for child in item.get_children %}
+                      <li class="{{ child.classes|join(' ')|e('esc_html') }}">
+                        <a href="{{ child.get_link|e('esc_url') }}">- {{ child.title|e('esc_html')}}</a>
+                        {% if child.children %}
+                          <ul class="uk-nav-sub">
+                            {% for third in child.children %}
+                              <li class="{{ child.classes|join(' ')|e('esc_html') }}">
+                                <a href="{{ child.get_link|e('esc_url') }}">- {{ child.title|e('esc_html')}}</a>
+                              </li>
+                            {% endfor %}
+                          </ul>
+                        {% endif %}
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </li>
+              {% else %}
+                <li class="{{ item.classes|join(' ')|e('esc_html') }}">
+                  <a href="{{ item.get_link|e('esc_url') }}">{{ item.title|e('esc_html')}}</a>
+                </li>
+              {% endif %}
+            {% endfor %}
+            <li class="uk-nav-divider"></li>
+          {% else %}
+            <li class="uk-margin-top">*Mobile Menu</li>
+          {% endif %}
+          <div class="uk-position-bottom-center uk-position-small uk-text-center">
+            {% if has_menu_contact %}
+              <div class="">
+                {% for item in menu_contact.get_items %}
+                  <a href="{{ item.link|e('esc_html') }}" class="uk-button uk-button-text uk-margin-top uk-text-boldest">{{ item.title|e('esc_html') }}</a>
+                {% endfor %}
+              </div>
+            {% else %}
+              <div class="">
+                <a href="#" class="uk-button uk-button-text uk-margin-top uk-text-boldest">Contact us</a>
+              </div>
+            {% endif %}
+            <div class="uk-margin-small">
+              {{ snippets.header_left_text() }}
+            </div>
+            <div>
+              <ul class="uk-subnav pull-left-15 uk-flex-center">
+                {% if has_menu_iconnav %}
+                  {% for item in menu_iconnav.get_items %}
+                    <li class="{{ item.classes|join(' ')|e('esc_html') }}">
+                      <a href="{{ item.get_link|e('esc_url') }}" class="uk-text-emphasis">
+                        {{ item.title|e('wp_kses_post')}}
+                      </a>
+                    </li>
+                  {% endfor %}
+                  <li class="">
+                    <a href="#ModalSearch" class="uk-text-emphasis" uk-toggle>
+                      <i class="fas fa-search"></i>
+                    </a>
+                  </li>
+                {% endif %}
+              </ul>
+            </div>
+          </div>
+        </ul>
+    </div>
+  </nav>
+{% endif %}

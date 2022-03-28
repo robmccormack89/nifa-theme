@@ -1,0 +1,24 @@
+<div id="{{ term.term_id|e('esc_html') }}" class="product-item uk-text-left">
+  
+  {# term image #}
+  <a href="{{ term.link|e('esc_url') }}" class="uk-inline-clip uk-transition-toggle" tabindex="0">
+    <img class="uk-transition-scale-up uk-transition-opaque" src="{{ Image(term.meta('featured_image')).src|e('esc_html') }}" alt="">
+  </a>
+  
+  {# term heading #}
+  <h3 class="uk-margin-small-top uk-h5 uk-text-left uk-text-center@m">
+    <a class="uk-link-heading" href="{{ term.link|e('esc_url') }}">{{ term.name|e('esc_html') }}</a>
+  </h3>
+  
+  {# posts in term list #}
+  {% if term.posts() %}
+    <ul class="uk-list uk-list-dividerr uk-list-collapse uk-text-left uk-text-center@m">
+      {% for post in term.posts() if term.slug != 'accessories' %}
+        <li>
+          <a class="uk-button uk-button-text uk-text-primary uk-text-capitalize" href="{{ post.link|e('esc_url') }}">{{ post.title|e('esc_html') }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  
+</div>

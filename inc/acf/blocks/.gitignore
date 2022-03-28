@@ -1,0 +1,8 @@
+.git
+.ftpconfig
+.sass-cache/
+compilation_cache/
+node_modules/
+package-lock.json
+composer.lock
+todo

@@ -1,0 +1,68 @@
+{% import "snippets.twig" as snippets %}
+
+<article id="{{ post.id|e('esc_html') }}" class="">
+  <div class="uk-card uk-background-muted uk-card-body uk-card-small uk-text-center">
+    
+    {# tease thumbnail #}
+    {% if post.thumbnail %}
+      <div class="uk-width-1-1 uk-margin-small-bottom">
+        <a class="uk-link-heading" href="{{ post.link|e('esc_url') }}">
+          <img src="{{ post.thumbnail.src|resize(800, 600, 'center')|e('esc_html') }}" width="800" height="600" alt="{{ post.thumbnail.alt|e('esc_html') }}">
+        </a>
+      </div>
+    {% endif %}
+    
+    {# tease metas: author & date #}
+    <div class="article-meta uk-text-meta uk-margin-small-bottom uk-text-small">
+      
+      <span class="post-author">
+        <a href="{{ post.author.link|e('esc_url') }}">
+          {{ post.author|e('esc_html') }}
+        </a>
+      </span>
+      
+      {% if post.date %}
+        <time class="post-date">
+          {{ post.date|date('j F Y')|e('esc_html') }}
+        </time>
+      {% endif %}
+      
+    </div>
+    
+    {# tease title #}
+    <h3 class="uk-card-ttitle uk-h5 uk-text-boldest uk-margin-small-bottom">
+      <a class="uk-link-heading" href="{{ post.link|e('esc_url') }}">{{ post.title|e('esc_html') }}</a>
+    </h3>
+    
+    {# tease content #}
+    {% if not fn('post_password_required', post.id) %}
+      <div class="post-tease-content">
+        
+        {# post preview #}
+        <p class="uk-text-small uk-margin-small-top">{{ post.preview.length(12).read_more('')|e('esc_html') }}</p>
+        
+        {# post link #}
+        <a href="{{ post.link|e('esc_url') }}" class="uk-button uk-button-default uk-button-small uk-text-capitalize">{{ snippets.read_more() }}</a>
+        
+      </div>
+    {% else %}
+      <div class="password-protected-form-tease">
+        <p class="uk-text-center uk-text-small">{{ snippets.pass_protect_text|e('esc_html') }}</p>
+        <form class="password-form" action="{{ site.site_url|e('esc_url') }}/wp-login.php?action=postpass" method="post">
+          <div class="uk-grid-collapse uk-flex uk-flex-middle" uk-grid>
+            <div class="uk-width-auto uk-visible@m">
+              <label for="pwbox-{{ post.id|e('esc_html') }}" class="uk-form-label uk-margin-small-right">{{ snippets.pass_label|e('esc_html') }}:</label>
+            </div>
+            <div class="uk-width-expand">
+              <input class="password-box uk-input uk-width-expand uk-form-small" name="post_password" id="pwbox-{{ post.id|e('esc_html') }}" type="password" placeholder="{{ snippets.pass_label|e('esc_html') }}" size="20" maxlength="20" />
+            </div>
+            <div class="uk-width-auto">
+              <input class="password-btn uk-button uk-button-primary uk-button-small" type="submit" name="Submit" value="{{ snippets.pass_enter_text|e('esc_html') }}" />
+            </div>
+          </div>
+        </form>
+      </div>
+    {% endif %}
+    
+  </div>
+</article>

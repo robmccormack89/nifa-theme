@@ -1,0 +1,30 @@
+{% import "block-functions.twig" as functions %}
+
+{% set _i = loop.index %}
+{% set n = items|length %}
+{% set _w = (items|length == 5 or items|length == 6) ? 500 : ((items|length == 3 or items|length == 4) ? 800 : ((items|length == 2) ? 1200 : 1920)) %}
+{% set heading = item.heading|default(item.post.title) %}
+{% set url = item.url|default(item.post.link|default('#')) %}
+{% set _the_image = (item.img) ? Image(item.img) : null %}
+{% set img_src = _the_image.src|resize(_w, 500, 'center')|default(item.post.thumbnail.src|resize(_w, 500, 'center')|default('https://picsum.photos/id/1' ~ _i ~ '/' ~ _w ~ '/500')) %}
+{% set img_alt = _the_image.alt|default(item.post.thumbnail.alt) %}
+
+{{ functions.block_link_open(is_preview, url, {class: 'uk-width-1-' ~ n ~ '@m'}) }}
+  <div class="uk-inline uk-light">
+    <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+      
+      {# featured page item image #}
+      {{ functions.block_img(is_preview, img_src, img_alt, {class: 'uk-transition-scale-up uk-transition-opaque uk-img'}) }}
+      
+      {# featured page item - overlayed content (title) #}
+      {% if heading %}
+        <div class="uk-overlay-secondary uk-position-cover">
+          <div class="uk-padding {{ align_content_pos }}">
+            <span class="feature-link uk-text-uppercase uk-text-emphasis">{{ heading|e('esc_html') }}</span>
+          </div>
+        </div>
+      {% endif %}
+      
+    </div>
+  </div>
+{{ functions.block_link_close(is_preview) }}

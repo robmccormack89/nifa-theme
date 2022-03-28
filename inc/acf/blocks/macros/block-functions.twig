@@ -1,0 +1,139 @@
+{% macro block_img(is_preview, img_src, image_alt = '') %}
+  {% set args = varargs[0] %}
+  {% if img_src %}
+    <img 
+    class="{{ args.class|e('esc_html')|default('block-img') }}" 
+    {% if not is_preview %}data-{% endif %}src="{{ img_src|e('esc_url') }}" 
+    {% if args.w %}width="{{ args.w }}" {% else %}data-width {% endif %}
+    {% if args.h %}height="{{ args.h }}" {% else %}data-height {% endif %}
+    alt="{{ image_alt|e('esc_html') }}" 
+    {% if not is_preview %}uk-img{% endif %} 
+    {% if args.coverheight %}uk-height-viewport{% endif %}>
+  {% endif %}
+{% endmacro %}
+
+{% macro block_link(is_preview, link, text) %}
+  {% set args = varargs[0] %}
+  {% if not is_preview %}
+    <a {% if link %}href="{{ link|e('esc_url') }}"{% endif %} class="{{ args.class|e('esc_html')|default('uk-button uk-button-default uk-button-large scroll') }}">{{ text|e('esc_html') }}</a>
+  {% else %}
+    <span class="{{ args.class|e('esc_html')|default('uk-button uk-button-default uk-button-large scroll') }}">{{ text|e('esc_html') }}</span>
+  {% endif %}
+{% endmacro %}
+
+{% macro block_link_open(is_preview, link) %}
+  {% set args = varargs[0] %}
+  {% if not is_preview %}
+    <a class="{{ args.class|e('esc_html')|default('feature-link uk-text-uppercase uk-text-emphasis') }}"{% if link %} href="{{ link|e('esc_url') }}"{% endif %}{% if args.attr %} {{args.attr}}{% endif %}>
+  {% else %}
+    <div class="{{ args.class|e('esc_html')|default('feature-link uk-text-uppercase uk-text-emphasis') }}">
+  {% endif %}
+{% endmacro %}
+
+{% macro block_link_close(is_preview) %}
+  {% if not is_preview %}
+    </a>
+  {% else %}
+    </div>
+  {% endif %}
+{% endmacro %}
+
+{% macro block_swiper(is_preview, key = 'my_swiper', target = '#my_swiper') %}
+  {% set args = varargs[0] %}
+  <script type='text/javascript'>
+    var {{ key }} = new Swiper('{{ target }}', {
+        
+        {% if args.centeredSlides %}
+          centeredSlides: true,
+        {% endif %}
+        
+        {% if args.slidesPerView %}
+          slidesPerView: {{ args.slidesPerView }},
+        {% endif %}
+        
+        {% if args.spaceBetween %}
+          spaceBetween: {{ args.spaceBetween }},
+        {% endif %}
+        
+        {% if args.autoplay %}
+          autoplay: {
+            delay: {{ args.autoplay_delay|default(3000) }},
+            disableOnInteraction: true,
+          },
+        {% endif %}
+        
+        {% if args.navigation %}
+          navigation: {
+            nextEl: '{{ args.navigation_nextele|default('.swiper-button-next') }}',
+            prevEl: '{{ args.navigation_prevele|default('.swiper-button-prev') }}',
+          },
+        {% endif %}
+        
+        {% if args.pagination %}
+          pagination: {
+            
+            el: '{{ args.pagination|default('.swiper-pagination') }}',
+            
+            {% if args.pagination_type %}
+              type: '{{ args.pagination_type }}',
+            {% endif %}
+            
+            {% if args.pagination_dynamicBullets %}
+              dynamicBullets: true,
+            {% endif %}
+            
+            {% if not is_preview %}
+              clickable: true,
+            {% endif %}
+            
+          },
+        {% endif %}
+        
+      });
+  </script>
+{% endmacro %}
+
+{% macro block_lg(is_preview, target = 'launchGallery', gallery) %}
+  {% set args = varargs[0] %}
+  {% if gallery %}
+    <script>
+      document.getElementById('{{ target }}').addEventListener('click', function() {
+        lightGallery(document.getElementById('{{ target }}'), {
+          dynamic: true,
+          {% if gallery is iterable %}
+            dynamicEl: [
+              {% for img in gallery %}
+                {
+                  "src": '{{ img.url|e('esc_url') }}',
+                  'thumb': '{{ img.url|e('esc_url')|resize(96, 76, 'center') }}',
+                  {% if img.title or img.caption %}
+                    'subHtml': '<div class="cover-caption-{{ img.id|e('esc_html') }} uk-light">{% if img.caption %}<h3 class="uk-margin-remove-bottom caption">{{ img.caption|e('esc_html') }}</h3>{% endif %}{% if img.title %}<p class="title">{{ img.title|e('esc_html') }}</p>{% endif %}</div>'
+                  {% endif %}
+                },
+              {% endfor %}
+            ]
+          {% endif %}
+        })
+      });
+    </script>
+  {% endif %}
+{% endmacro %}
+
+{% macro preview_text(is_preview, text = 'Preview-only text') %}
+  {% if is_preview %}
+    {{ text|e('esc_html') }}
+  {% endif %}
+{% endmacro %}
+
+{% macro iframe(src) %}
+  {% set args = varargs[0] %}
+  {% if src %}
+    <iframe 
+    src="{{ src|e('esc_url') }}" 
+    {% if args.w %}width="{{ args.w|default('1920') }}" {% else %}data-width {% endif %}
+    {% if args.h %}height="{{ args.h|default('1080') }}" {% else %}data-height {% endif %}
+    frameborder="0" 
+    uk-video uk-responsive>
+    </iframe>
+  {% endif %}
+{% endmacro %}

@@ -1,0 +1,41 @@
+{#
+/**
+ * Block Name: Cover section
+ *
+ * This is the template that displays the Cover section block.
+ */
+#}
+
+{% extends "block.twig" %}
+{% import "block-functions.twig" as functions %}
+
+{% block block_content %}
+  {% set _img_h = (fullheight) ? '975' : null %}
+  {% set _placeholder_h = (fullheight) ? '975' : '500' %}
+  {% set img_src = _block_img.src|resize(1920, _img_h)|default('https://picsum.photos/id/' ~ default_theme_img_id ~ '/1920/' ~ _placeholder_h) %}
+  {% set img_alt = _block_img.alt %}
+  
+  <div class="uk-inline headercover">
+    
+    {{ functions.block_img(is_preview, img_src, img_alt, {class: fullheight_img_class, coverheight: fullheight}) }}
+    
+    <div class="uk-position-cover uk-overlay uk-overlay-primary overlay-contained uk-inline">
+      
+      <div class="block-content-area theme-position position-middle">
+        <div class="uk-container">
+          <InnerBlocks />
+        </div>
+      </div>
+      
+      {% if bottom_msg %}
+        <div class="theme-position position-bottom uk-overlay-primary">
+          <div class="uk-container uk-margin-small-top uk-margin-small-bottom">
+            {{ bottom_msg|e('wp_kses_post') }}
+          </div>
+        </div>
+      {% endif %} 
+      
+    </div>
+    
+  </div>
+{% endblock %}

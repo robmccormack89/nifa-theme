@@ -1,0 +1,383 @@
+# Copyright (C) 2022 nifa-theme
+# This file is distributed under the same license as the nifa-theme package.
+msgid ""
+msgstr ""
+"Project-Id-Version: nifa-theme\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Econdig: 8bit\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"MIME-Version: 1.0\n"
+"Project-Id-Version: undefined\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: inc/extra/snippets.php:6
+msgctxt "Lorem picsum base image id"
+msgid "1036"
+msgstr ""
+
+#: inc/extra/snippets.php:9
+msgctxt "General archive title"
+msgid "Archive"
+msgstr ""
+
+#: inc/extra/snippets.php:12
+msgctxt "Menu locations"
+msgid "Main Menu"
+msgstr ""
+
+#: inc/extra/snippets.php:13
+msgctxt "Menu locations"
+msgid "Mobile Menu"
+msgstr ""
+
+#: inc/extra/snippets.php:14
+msgctxt "Menu locations"
+msgid "Iconnav Menu"
+msgstr ""
+
+#: inc/extra/snippets.php:15
+msgctxt "Menu locations"
+msgid "Contact Menu"
+msgstr ""
+
+#: inc/extra/snippets.php:16
+msgctxt "Menu locations"
+msgid "Footer One Menu"
+msgstr ""
+
+#: inc/extra/snippets.php:17
+msgctxt "Menu locations"
+msgid "Footer Two Menu"
+msgstr ""
+
+#: inc/extra/snippets.php:18
+msgctxt "Menu locations"
+msgid "Footer Three Menu"
+msgstr ""
+
+#: inc/extra/snippets.php:19
+msgctxt "Menu locations"
+msgid "Footer Four Menu"
+msgstr ""
+
+#: inc/extra/snippets.php:22
+msgctxt "Options page title"
+msgid "Theme Settings"
+msgstr ""
+
+#: inc/extra/snippets.php:23
+msgctxt "Options page menu title"
+msgid "Theme Settings"
+msgstr ""
+
+#: inc/extra/snippets.php:26
+msgctxt "Search results"
+msgid "Search results"
+msgstr ""
+
+#: inc/extra/snippets.php:27
+msgctxt "Search results"
+msgid "You have searched for:"
+msgstr ""
+
+#: inc/Theme.php:238
+msgctxt "Post Type General Name"
+msgid "Products"
+msgstr ""
+
+#: inc/Theme.php:239
+msgctxt "Post Type Singular Name"
+msgid "Product"
+msgstr ""
+
+#: inc/Theme.php:240
+msgid "Products"
+msgstr ""
+
+#: inc/Theme.php:241, inc/Theme.php:273
+msgid "Product"
+msgstr ""
+
+#: inc/Theme.php:242, inc/Theme.php:274
+msgid "Loading Dock Products"
+msgstr ""
+
+#: inc/Theme.php:243
+msgid "Product Attributes"
+msgstr ""
+
+#: inc/Theme.php:244
+msgid "Parent Product:"
+msgstr ""
+
+#: inc/Theme.php:245
+msgid "All Products"
+msgstr ""
+
+#: inc/Theme.php:246
+msgid "Add New Product"
+msgstr ""
+
+#: inc/Theme.php:247
+msgid "Add New"
+msgstr ""
+
+#: inc/Theme.php:248
+msgid "New Product"
+msgstr ""
+
+#: inc/Theme.php:249
+msgid "Edit Product"
+msgstr ""
+
+#: inc/Theme.php:250
+msgid "Update Product"
+msgstr ""
+
+#: inc/Theme.php:251
+msgid "View Product"
+msgstr ""
+
+#: inc/Theme.php:252
+msgid "View Products"
+msgstr ""
+
+#: inc/Theme.php:253
+msgid "Search Product"
+msgstr ""
+
+#: inc/Theme.php:254
+msgid "Not found"
+msgstr ""
+
+#: inc/Theme.php:255
+msgid "Not found in Trash"
+msgstr ""
+
+#: inc/Theme.php:256
+msgid "Featured Image"
+msgstr ""
+
+#: inc/Theme.php:257
+msgid "Set featured image"
+msgstr ""
+
+#: inc/Theme.php:258
+msgid "Remove featured image"
+msgstr ""
+
+#: inc/Theme.php:259
+msgid "Use as featured image"
+msgstr ""
+
+#: inc/Theme.php:260
+msgid "Insert into Product"
+msgstr ""
+
+#: inc/Theme.php:261
+msgid "Uploaded to this Product"
+msgstr ""
+
+#: inc/Theme.php:262
+msgid "Products list"
+msgstr ""
+
+#: inc/Theme.php:263
+msgid "Products list navigation"
+msgstr ""
+
+#: inc/Theme.php:264
+msgid "Filter Products list"
+msgstr ""
+
+#: inc/Theme.php:300
+msgctxt "Taxonomy General Name"
+msgid "Product categories"
+msgstr ""
+
+#: inc/Theme.php:301
+msgctxt "Taxonomy Singular Name"
+msgid "Product category"
+msgstr ""
+
+#: inc/Theme.php:302
+msgid "Product categories"
+msgstr ""
+
+#: inc/Theme.php:303
+msgid "All categories"
+msgstr ""
+
+#: inc/Theme.php:304
+msgid "Parent category"
+msgstr ""
+
+#: inc/Theme.php:305
+msgid "Parent category:"
+msgstr ""
+
+#: inc/Theme.php:306
+msgid "New Category Name"
+msgstr ""
+
+#: inc/Theme.php:307
+msgid "Add New Category"
+msgstr ""
+
+#: inc/Theme.php:308
+msgid "Edit Category"
+msgstr ""
+
+#: inc/Theme.php:309
+msgid "Update Category"
+msgstr ""
+
+#: inc/Theme.php:310
+msgid "View Category"
+msgstr ""
+
+#: inc/Theme.php:311
+msgid "Separate categories with commas"
+msgstr ""
+
+#: inc/Theme.php:312
+msgid "Add or remove categories"
+msgstr ""
+
+#: inc/Theme.php:313
+msgid "Choose from the most used"
+msgstr ""
+
+#: inc/Theme.php:314
+msgid "Popular categories"
+msgstr ""
+
+#: inc/Theme.php:315
+msgid "Search categories"
+msgstr ""
+
+#: inc/Theme.php:316
+msgid "Not Found"
+msgstr ""
+
+#: inc/Theme.php:317
+msgid "No categories"
+msgstr ""
+
+#: inc/Theme.php:318
+msgid "Categories list"
+msgstr ""
+
+#: inc/Theme.php:319
+msgid "Categories list navigation"
+msgstr ""
+
+#: inc/Theme.php:344
+msgid "Footer: Left - Sidebar Area"
+msgstr ""
+
+#: inc/Theme.php:346
+msgid "Sidebar Area for the Footer Left area, you can add multiple widgets here."
+msgstr ""
+
+#: inc/Theme.php:353
+msgid "Footer: Center - Sidebar Area"
+msgstr ""
+
+#: inc/Theme.php:355
+msgid "Sidebar Area for the Footer Center area, you can add multiple widgets here."
+msgstr ""
+
+#: inc/Theme.php:362
+msgid "Footer: Right - Sidebar Area"
+msgstr ""
+
+#: inc/Theme.php:364
+msgid "Sidebar Area for the Footer Right area, you can add multiple widgets here."
+msgstr ""
+
+#: templates/custom.php:5
+msgid "Custom Template"
+msgstr ""
+
+#: views/temp/macros/snippets.php:2
+msgctxt "Header"
+msgid "Working hours: Mon - Sat 8.00 - 18.00 | Call Us: +353 44 9345884"
+msgstr ""
+
+#: views/temp/macros/snippets.php:6
+msgctxt "Search form"
+msgid "Start typing..."
+msgstr ""
+
+#: views/temp/macros/snippets.php:10
+msgctxt "Footer"
+msgid "Copyright © 2019. All Rights Reserved"
+msgstr ""
+
+#: views/temp/macros/snippets.php:18
+msgctxt "Password-protected content"
+msgid "This content is password protected. To view it please enter your password below:"
+msgstr ""
+
+#: views/temp/macros/snippets.php:22
+msgctxt "Password-protected content"
+msgid "Password"
+msgstr ""
+
+#: views/temp/macros/snippets.php:26
+msgctxt "Password-protected content"
+msgid "Enter"
+msgstr ""
+
+#: views/temp/macros/snippets.php:34
+msgctxt "Archive pagination"
+msgid "Newer posts"
+msgstr ""
+
+#: views/temp/macros/snippets.php:38
+msgctxt "Archive pagination"
+msgid "Older posts"
+msgstr ""
+
+#: views/temp/macros/snippets.php:42
+msgctxt "Archive pagination"
+msgid "No more items..."
+msgstr ""
+
+#: views/temp/macros/snippets.php:46
+msgctxt "Archive pagination"
+msgid "There has been an error loading items..."
+msgstr ""
+
+#: views/temp/macros/snippets.php:54
+msgctxt "Single"
+msgid "Posted in:"
+msgstr ""
+
+#: views/temp/macros/snippets.php:58
+msgctxt "Single"
+msgid "Newer Article"
+msgstr ""
+
+#: views/temp/macros/snippets.php:62
+msgctxt "Single"
+msgid "Older Article"
+msgstr ""
+
+#: views/temp/macros/snippets.php:66
+msgctxt "Single"
+msgid "Share:"
+msgstr ""
+
+#: views/temp/macros/snippets.php:108
+msgctxt "Post"
+msgid "Read more"
+msgstr ""

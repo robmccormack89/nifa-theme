@@ -1,0 +1,31 @@
+{#
+/**
+ * Block Name: Highlight card section
+ *
+ * This is the template that displays the Highlight card section block.
+ */
+#}
+
+{% extends "block.twig" %}
+{% import "block-functions.twig" as functions %}
+
+{% block block_content %}
+  {% set img_src = _block_img.src|resize(720, 500)|default('https://picsum.photos/id/' ~ default_theme_img_id ~ '/720/500') %}
+  {% set img_alt = _block_img.alt %}
+  
+  <div class="featured-item-section uk-section uk-section-small uk-section-muted">
+    <div class="uk-container">
+      <div class="uk-grid-match uk-flex uk-flex-{{ align_content|e('esc_html') }} uk-grid-collapse uk-background-default uk-box-shadow-medium" uk-grid>
+        
+        <div class="block-img-area uk-width-3-5@m">
+          {{ functions.block_img(is_preview, img_src, img_alt, {w: '720', h: '500'}) }}
+        </div>
+        
+        <div class="block-content-area uk-padding-large uk-width-2-5@m {{ first_class }}">
+          <InnerBlocks />
+        </div>
+        
+      </div>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{#
+/**
+ * Block Name: CTA section
+ *
+ * This is the template that displays the CTA section block.
+ */
+#}
+
+{% extends "block.twig" %}
+{% import "block-functions.twig" as functions %}
+
+{% block block_content %}
+  <div class="uk-section {{ light_class }}" style="background-color: {{ bg_colour|e('esc_html') }}">
+    <div class="block-content-area uk-container uk-container-large">
+      <InnerBlocks />
+    </div>
+  </div>
+{% endblock %}
