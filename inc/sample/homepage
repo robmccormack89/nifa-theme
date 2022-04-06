@@ -1,0 +1,160 @@
+<!-- wp:acf/cover-section {"id":"block_623c8911f5596","name":"acf/cover-section","data":{"img":306,"_img":"field_61d76f01c14b7","bottom_msg":"\u003cp style=\u0022text-align: center; margin: 0;\u0022\u003eNational Inshore Fishermen’s Association | Cahirciveen, Co.Kerry\u003c/p\u003e","_bottom_msg":"field_620e46bf11699"},"align":"full","mode":"preview","full_height":false} -->
+<!-- wp:spacer {"height":"40px"} -->
+<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:heading {"textAlign":"left","level":1,"className":"uk-text-boldest"} -->
+<h1 class="has-text-align-left uk-text-boldest">Advocating For Support And Resources</h1>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"className":"uk-text-lead"} -->
+<p class="uk-text-lead">We are focused on the needs and wellbeing of boat owners and their crews involved in Inshore Fishing and nothing else.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:acf/cover-section -->
+
+<!-- wp:acf/cta-section {"id":"block_6241ba2b809cb","name":"acf/cta-section","data":{"bg_colour":"#1e87f0","_bg_colour":"field_61d756573afe1","light_mode":"enabled","_light_mode":"field_6220f490bf828"},"align":"full","mode":"preview"} -->
+<!-- wp:heading {"textAlign":"center","fontSize":"medium"} -->
+<h2 class="has-text-align-center has-medium-font-size">Membership is awarded to individuals that are registered owners of&nbsp;<strong>Irish inshore fishing vessels.</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"luminous-vivid-amber","className":"is-style-fill uk-text-boldest"} -->
+<div class="wp-block-button is-style-fill uk-text-boldest"><a class="wp-block-button__link has-luminous-vivid-amber-background-color has-background">Become a NIFA member today</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+<!-- /wp:acf/cta-section -->
+
+<!-- wp:acf/cta-section {"id":"block_623c87b9f558e","name":"acf/cta-section","data":{"bg_colour":"#ffffff","_bg_colour":"field_61d756573afe1","light_mode":"disabled","_light_mode":"field_6220f490bf828"},"align":"full","mode":"preview"} -->
+<!-- wp:group {"className":"uk-container uk-container-small"} -->
+<div class="wp-block-group uk-container uk-container-small"><!-- wp:heading {"textAlign":"center","className":"uk-text-boldest"} -->
+<h2 class="has-text-align-center uk-text-boldest">Our Purpose</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center","className":"uk-text-lead"} -->
+<p class="has-text-align-center uk-text-lead">Our purpose is to make measurable and sustainable impact on the revenue and livelihood of inshore fishing folk. We will achieve this by:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:spacer {"height":"30px"} -->
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+<!-- /wp:spacer -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"textAlign":"center","level":3,"className":"uk-text-boldest"} -->
+<h3 class="has-text-align-center uk-text-boldest">Needs &amp; Wellbeing</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Being focused on the needs and wellbeing of boat owners and their crews involved in inshore fishing and nothing else.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","level":3,"className":"uk-text-boldest"} -->
+<h3 class="has-text-align-center uk-text-boldest">Selling Together</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Selling together to ensure that our members capture as much of the value they create, as it is possible to do.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"textAlign":"center","level":3,"className":"uk-text-boldest"} -->
+<h3 class="has-text-align-center uk-text-boldest">Policy Makers</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Bringing our members insights to policy makers to ensure our members can compete effectively to sustain their families and to enrich rural Ireland.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"textAlign":"center","level":3,"className":"uk-text-boldest"} -->
+<h3 class="has-text-align-center uk-text-boldest">Advocating</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Advocating on behalf of members for support &amp; resources from State/European bodies supporting sustainable rural development/industry</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:columns -->
+<div class="wp-block-columns"><!-- wp:column {"width":"25%"} -->
+<div class="wp-block-column" style="flex-basis:25%"></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"50%"} -->
+<div class="wp-block-column" style="flex-basis:50%"><!-- wp:heading {"textAlign":"center","level":3,"className":"uk-text-boldest"} -->
+<h3 class="has-text-align-center uk-text-boldest">Buying Together</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Buying together to reduce the cost of fishing and improve the quality of life of our members by bringing them advice and best practice in terms of running their businesses.</p>
+<!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"width":"25%"} -->
+<div class="wp-block-column" style="flex-basis:25%"></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></div>
+<!-- /wp:group -->
+<!-- /wp:acf/cta-section -->
+
+<!-- wp:acf/featured-items-row {"id":"block_6241b508809c6","name":"acf/featured-items-row","data":{"featured_items_0_select_post_object":5,"_featured_items_0_select_post_object":"field_61d7426a0bbed","featured_items_0_img":"","_featured_items_0_img":"field_61d741c2b6aaa","featured_items_0_heading":"","_featured_items_0_heading":"field_61d741c2b65b0","featured_items_0_url":"","_featured_items_0_url":"field_61d742e20bbee","featured_items_1_select_post_object":13,"_featured_items_1_select_post_object":"field_61d7426a0bbed","featured_items_1_img":"","_featured_items_1_img":"field_61d741c2b6aaa","featured_items_1_heading":"","_featured_items_1_heading":"field_61d741c2b65b0","featured_items_1_url":"","_featured_items_1_url":"field_61d742e20bbee","featured_items_2_select_post_object":8,"_featured_items_2_select_post_object":"field_61d7426a0bbed","featured_items_2_img":"","_featured_items_2_img":"field_61d741c2b6aaa","featured_items_2_heading":"","_featured_items_2_heading":"field_61d741c2b65b0","featured_items_2_url":"","_featured_items_2_url":"field_61d742e20bbee","featured_items":3,"_featured_items":"field_61d741c2b5996"},"align":"full","mode":"preview","align_content":"center center"} /-->
+
+<!-- wp:acf/highlight-card-section {"id":"block_623c87bdf558f","name":"acf/highlight-card-section","data":{"layout":"right","_layout":"field_6221629a4ffd1","img":186,"_img":"field_6221629a50311"},"align":"full","mode":"preview","align_content":"center"} -->
+<!-- wp:heading {"textAlign":"center"} -->
+<h2 class="has-text-align-center">Join us</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph {"align":"center"} -->
+<p class="has-text-align-center">Become a member today by completing our online application form.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-buttons"><!-- wp:button {"width":50,"style":{"color":{"background":"#1e87f0"}},"className":"is-style-fill uk-text-boldest","fontSize":"medium"} -->
+<div class="wp-block-button has-custom-width wp-block-button__width-50 has-custom-font-size is-style-fill uk-text-boldest has-medium-font-size"><a class="wp-block-button__link has-background" style="background-color:#1e87f0">Join us</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+<!-- /wp:acf/highlight-card-section -->
+
+<!-- wp:acf/half-and-half-section {"id":"block_623c87b2f558c","name":"acf/half-and-half-section","data":{"img":184,"_img":"field_61d6f23c2068b","layout":"right","_layout":"field_620e7b33c8ad2","bg_color":"#1e87f0","_bg_color":"field_6220ea51b4656","light_mode":"enabled","_light_mode":"field_6220eac8b4658"},"align":"full","mode":"preview","align_content":"center"} -->
+<!-- wp:heading {"className":"uk-text-boldest"} -->
+<h2 class="uk-text-boldest">Full Membership</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Full membership of NIFA CLG can only be awarded to individuals that are the registered owners of Irish registered inshore fishing vessels that conform to the European Maritime Fisheries Fund (EMFF) definition, of Small Scale Coastal Fisheries (SSCF).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3,"className":"uk-text-boldest"} -->
+<h3 class="uk-text-boldest">Pricing</h3>
+<!-- /wp:heading -->
+
+<!-- wp:html -->
+<table class="uk-table uk-table-small uk-table-divider uk-table-justify uk-width-1-2">
+   <thead>
+      <tr>
+         <th class="uk-table-expand">Vessel Size</th>
+         <th class="uk-width-small uk-text-right">Price</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <td>Vessels LOA less than 7.99m</td>
+         <td class="uk-text-right uk-text-bold">€100</td>
+      </tr>
+      <tr>
+         <td>Vessels LOA 9.99m to 8m</td>
+         <td class="uk-text-right uk-text-bold">€150</td>
+      </tr>
+      <tr>
+         <td>Vessels LOA 11.99m to 10m</td>
+         <td class="uk-text-right uk-text-bold">€200</td>
+      </tr>
+   </tbody>
+</table>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>Membership is renewable on an annual basis. Fees are due on the 1st of February each year. Membership is not considered to be active until appropriate fees are paid.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:acf/half-and-half-section -->

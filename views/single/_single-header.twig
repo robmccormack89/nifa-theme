@@ -1,0 +1,11 @@
+<header class="page-header uk-light uk-background-cover" style="background-image: url({{theme.link}}/assets/img/hero_inner_page.jpg)">
+  <div class="uk-overlay uk-overlay-primary">
+    <div id="PageHeaderWrap" class="uk-container uk-margin-medium-bottom">
+      {% include '_breadcrumbs-nav.twig' %}
+      <h1 class="uk-margin-remove">{{ post.title|e('esc_html') }}</h1>
+      {% if post.description %}
+        <p class="uk-text-lead uk-width-4-5">{{ post.description|e('esc_html') }}</p>
+      {% endif %}
+    </div>
+  </div>
+</header>

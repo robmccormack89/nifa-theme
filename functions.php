@@ -3,7 +3,7 @@
 *
 * Rmcc Theme functions and definitions
 *
-* @package Rmcc_Theme
+* @package NIFA-Theme
 *
 */
 

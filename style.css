@@ -65,24 +65,24 @@ html {
 .uk-background-primary,
 .uk-button-primary,
 .uk-button-primary:focus, .uk-button-primary:hover {
-  background-color: #cf372d;
+  background-color: #1e87f0;
 }
 .uk-text-primary {
-  color: #cf372d!important;
+  color: #1e87f0!important;
 }
 .uk-button-text:before {
-  border-bottom: 1px solid #cf372d;
+  border-bottom: 1px solid #1e87f0;
 }
 .uk-link-heading a:hover, .uk-link-toggle:focus .uk-link-heading, .uk-link-toggle:hover .uk-link-heading, a.uk-link-heading:hover {
-  color: #cf372d;
+  color: #1e87f0;
 }
 .uk-offcanvas-bar .uk-text-primary,
 .uk-light .uk-text-primary {
-  color: #cf372d!important;
+  color: #1e87f0!important;
 }
 /* buttons */
 .uk-light .uk-button-primary {
-  background-color: #cf372d;
+  background-color: #1e87f0;
   color: #fff;
 }
 
@@ -184,7 +184,7 @@ html {
 
 /* footer */
 .footer-bottom .uk-divider-small:after {
-  border-top: 3px solid #cf372d;
+  border-top: 3px solid #1e87f0;
   content: "";
   display: inline-block;
   max-width: 100%;
@@ -211,7 +211,7 @@ html {
   font-size: .75rem;
 }
 .footer-bottom > hr {
-  border-top: 3px solid #cf372d;
+  border-top: 3px solid #1e87f0;
   margin: 0 0 0;
 }
 
@@ -234,6 +234,9 @@ html {
   .sticky-wrap {
      padding-left: 20px;
      padding-right: 20px;
+  }
+  .cover-img {
+    min-height: 500px;
   }
 }
 @media only screen and (min-width:960px) {
@@ -285,10 +288,10 @@ html {
   transition: color .1s ease-in-out;
 }
 .social .social--item a {
-  background-color: #cf372d;
+  background-color: #1e87f0;
 }
 .uk-light .social .social--item a {
-  background-color: #cf372d;
+  background-color: #1e87f0;
 }
 .social .social--item a i {
   color: #fff;
@@ -297,7 +300,7 @@ html {
   color: #fff;
 }
 .social .social--item:active a, .social .social--item:hover a {
-  background-color: #cf372d;
+  background-color: #1e87f0;
 }
 .uk-light .social .social--item:active a i, .uk-light .social .social--item:hover a i {
   color: #fff;
@@ -332,7 +335,21 @@ html {
   background: rgb(20 20 20 / 79%);
 }
 
-#SiteFooter .uk-overlay-primary,
-.page-header .uk-overlay-primary {
-  background: rgb(34 34 34 / 40%);
+.uk-light .uk-table th {
+  color: #fff;
+  font-weight: 700;
+}
+
+@media only screen and (max-width:959px) {
+  .cover-img {
+    /* object-fit: cover;
+    width: 100%;
+    min-height: 400px; */
+  }
+  #PageHeaderWrap h1.uk-margin-medium-top {
+    margin-top: 10px!important;
+  }
+  #PageHeaderWrap.uk-margin-medium-bottom {
+    margin-bottom: 10px!important;
+  }
 }

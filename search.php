@@ -2,7 +2,7 @@
 /**
  * The search
  *
- * @package Rmcc_Theme
+ * @package NIFA-Theme
  */
  
 // namespace stuff

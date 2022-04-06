@@ -18,9 +18,9 @@
       
       {# featured page item - overlayed content (title) #}
       {% if heading %}
-        <div class="uk-overlay-secondary uk-position-cover">
+        <div class="uk-overlay-primary uk-position-cover">
           <div class="uk-padding {{ align_content_pos }}">
-            <span class="feature-link uk-text-uppercase uk-text-emphasis">{{ heading|e('esc_html') }}</span>
+            <span class="uk-text-uppercase uk-text-emphasis uk-button uk-button-text uk-text-bold">{{ heading|e('esc_html') }}</span>
           </div>
         </div>
       {% endif %}

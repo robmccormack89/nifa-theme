@@ -5,7 +5,7 @@
 * Template Name: Custom Template
 * Template Post Type: post, page, product
 *
-* @package Rmcc_Theme
+* @package NIFA-Theme
 *
 */
 

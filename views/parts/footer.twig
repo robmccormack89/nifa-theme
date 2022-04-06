@@ -99,7 +99,7 @@
           {# footer bottom: col 1 #}
           <div>
             {% if has_menu_footer_one %}
-              <h4 class="uk-margin-small-bottom">{{ menu_footer_one.title }}</h4>
+              <h4 class="uk-margin-small-bottom">{{ menu_footer_one_title|e('esc_html') }}</h4>
               <hr class="uk-divider-small uk-margin-small-top">
               <ul class="uk-list">
                 {% for item in menu_footer_one.get_items %}
@@ -116,7 +116,7 @@
           {# footer bottom: col 2 #}
           <div>
             {% if has_menu_footer_two %}
-              <h4 class="uk-margin-small-bottom">{{ menu_footer_two.title }}</h4>
+              <h4 class="uk-margin-small-bottom">{{ menu_footer_two_title|e('esc_html') }}</h4>
               <hr class="uk-divider-small uk-margin-small-top">
               <ul class="uk-list">
                 {% for item in menu_footer_two.get_items %}
@@ -133,7 +133,7 @@
           {# footer bottom: col 3 #}
           <div>
             {% if has_menu_footer_three %}
-              <h4 class="uk-margin-small-bottom">{{ menu_footer_three.title }}</h4>
+              <h4 class="uk-margin-small-bottom">{{ menu_footer_three_title|e('esc_html') }}</h4>
               <hr class="uk-divider-small uk-margin-small-top">
               {% for item in menu_footer_three.get_items %}
                 <a href="{{ item.link|e('esc_html') }}" class="uk-button uk-button-small uk-button-primary {{ item.classes|join(' ')|e('esc_html') }}">{{ item.title|e('esc_html') }}</a>

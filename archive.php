@@ -4,7 +4,7 @@
 *
 * The template for displaying all general archive pages (apart from the main blog posts page)
 *
-* @package Rmcc_Theme
+* @package NIFA-Theme
 *
 */
 

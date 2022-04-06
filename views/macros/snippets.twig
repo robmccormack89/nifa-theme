@@ -1,5 +1,5 @@
 {% macro header_left_text() %}
-{{ _x('Working hours: Mon - Sat 8.00 - 18.00 | Call Us: +353 44 9345884', 'Header', 'nifa-theme') }}
+{{ _x('National Inshore Fishermen’s Association | Cahirciveen, Co.Kerry', 'Header', 'nifa-theme') }}
 {% endmacro %}
 
 {% macro searchform_text() %}
@@ -7,7 +7,7 @@
 {% endmacro %}
 
 {% macro copy_text() %}
-{{ _x('Copyright © 2019. All Rights Reserved', 'Footer', 'nifa-theme') }}
+{{ _x('© 2021 NIFA. All Rights Reserved.', 'Footer', 'nifa-theme') }}
 {% endmacro %}
 
 {# password protected content
@@ -106,4 +106,20 @@
 
 {% macro read_more() %}
 {{ _x('Read more', 'Post', 'nifa-theme') }}
+{% endmacro %}
+
+{# 404  
+
+#}
+
+{% macro error_page_msg() %}
+  {{ _x('Try returning to the Homepage using the button below', '404 Errors: message', 'nifa-theme') }}
+{% endmacro %}
+
+{% macro error_page_return_txt() %}
+  {{ _x('Return to Homepage', '404 Errors: return to home text', 'nifa-theme') }}
+{% endmacro %}
+
+{% macro error_page_browse_txt() %}
+  {{ _x('Browse for Parts', '404 Errors: browse text', 'ned-murphy-tractors-theme') }}
 {% endmacro %}

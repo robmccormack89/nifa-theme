@@ -31,7 +31,15 @@ class Theme extends Timber {
     add_action('init', array($this, 'register_widget_areas'));
     add_action('init', array($this, 'register_navigation_menus'));
     add_action('enqueue_block_assets', array($this, 'theme_enqueue_assets')); // use 'theme_enqueue_assets' for frontend-only
+    
     add_filter('wpseo_breadcrumb_separator', array($this, 'filter_wpseo_breadcrumb_separator'), 10, 1);
+    
+    // remove_filter( 'the_content', 'wpautop' );
+    // remove_filter( 'the_excerpt', 'wpautop' );
+    // 
+    // add_filter( 'the_content', array($this, 'wpse_wpautop_nobr') );
+    // add_filter( 'the_excerpt', array($this, 'wpse_wpautop_nobr') );
+    // remove_filter('widget_text_content', 'wpautop');
     
     // adds svg support to theme
     add_filter('wp_check_filetype_and_ext', function($data, $file, $filename, $mimes) {
@@ -52,6 +60,8 @@ class Theme extends Timber {
     }, 10, 4 );
     add_filter('upload_mimes', array($this, 'cc_mime_types'));
     add_action('admin_head', array($this, 'fix_svg'));
+    
+    // add_filter( 'widget_display_callback', array($this, 'wpse8170_widget_display_callback'), 10, 3 );
     
     global $theme_config;
     if($theme_config['theme_preloader']){
@@ -113,7 +123,16 @@ class Theme extends Timber {
       }
       
     });
-    
+  }
+  
+  
+  public function wpse8170_widget_display_callback( $instance, $widget, $args ) {
+      $instance['filter'] = false;
+      return $instance;
+  }
+  
+  public function wpse_wpautop_nobr( $content ) {
+    return wpautop( $content, false );
   }
   
   // change the seperator for yoast's breadcrumb
@@ -180,11 +199,8 @@ class Theme extends Timber {
     
     $foot_menu_args = array( 'depth' => 1 );
     $context['menu_footer_one'] = new \Timber\Menu( 'footer_menu_one', $foot_menu_args );
-    $context['menu_footer_one_title'] = wp_get_nav_menu_name('footer_menu_one');
     $context['menu_footer_two'] = new \Timber\Menu( 'footer_menu_two', $foot_menu_args );
-    $context['menu_footer_two_title'] = wp_get_nav_menu_name('footer_menu_two');
     $context['menu_footer_three'] = new \Timber\Menu( 'footer_menu_three', $foot_menu_args );
-    $context['menu_footer_three_title'] = wp_get_nav_menu_name('footer_menu_three');
     $context['menu_footer_four'] = new \Timber\Menu( 'footer_menu_four', $foot_menu_args );
     $context['menu_iconnav'] = new \Timber\Menu( 'iconnav_menu', $foot_menu_args );
     $context['menu_contact'] = new \Timber\Menu( 'contact_menu', $foot_menu_args );
@@ -216,8 +232,110 @@ class Theme extends Timber {
     // return context
     return $context;    
   }
-  public function register_post_types() {}
-  public function register_taxonomies() {}
+  public function register_post_types() {
+    
+  	$labels = array(
+  		'name'                  => _x( 'Products', 'Post Type General Name', 'nifa-theme' ),
+  		'singular_name'         => _x( 'Product', 'Post Type Singular Name', 'nifa-theme' ),
+  		'menu_name'             => __( 'Products', 'nifa-theme' ),
+  		'name_admin_bar'        => __( 'Product', 'nifa-theme' ),
+  		'archives'              => __( 'Loading Dock Products', 'nifa-theme' ),
+  		'attributes'            => __( 'Product Attributes', 'nifa-theme' ),
+  		'parent_item_colon'     => __( 'Parent Product:', 'nifa-theme' ),
+  		'all_items'             => __( 'All Products', 'nifa-theme' ),
+  		'add_new_item'          => __( 'Add New Product', 'nifa-theme' ),
+  		'add_new'               => __( 'Add New', 'nifa-theme' ),
+  		'new_item'              => __( 'New Product', 'nifa-theme' ),
+  		'edit_item'             => __( 'Edit Product', 'nifa-theme' ),
+  		'update_item'           => __( 'Update Product', 'nifa-theme' ),
+  		'view_item'             => __( 'View Product', 'nifa-theme' ),
+  		'view_items'            => __( 'View Products', 'nifa-theme' ),
+  		'search_items'          => __( 'Search Product', 'nifa-theme' ),
+  		'not_found'             => __( 'Not found', 'nifa-theme' ),
+  		'not_found_in_trash'    => __( 'Not found in Trash', 'nifa-theme' ),
+  		'featured_image'        => __( 'Featured Image', 'nifa-theme' ),
+  		'set_featured_image'    => __( 'Set featured image', 'nifa-theme' ),
+  		'remove_featured_image' => __( 'Remove featured image', 'nifa-theme' ),
+  		'use_featured_image'    => __( 'Use as featured image', 'nifa-theme' ),
+  		'insert_into_item'      => __( 'Insert into Product', 'nifa-theme' ),
+  		'uploaded_to_this_item' => __( 'Uploaded to this Product', 'nifa-theme' ),
+  		'items_list'            => __( 'Products list', 'nifa-theme' ),
+  		'items_list_navigation' => __( 'Products list navigation', 'nifa-theme' ),
+  		'filter_items_list'     => __( 'Filter Products list', 'nifa-theme' ),
+  	);
+  	$rewrite = array(
+  		'slug'                  => 'loading-dock-products/products/%product_cat%',
+  		'with_front'            => false,
+  		'pages'                 => true,
+  		'feeds'                 => true,
+  	);
+  	$args = array(
+  		'label'                 => __( 'Product', 'nifa-theme' ),
+  		'description'           => __( 'Loading Dock Products', 'nifa-theme' ),
+  		'labels'                => $labels,
+  		'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'custom-fields', 'page-attributes' ),
+  		'taxonomies'            => array(),
+  		'hierarchical'          => false,
+  		'public'                => true,
+  		'show_ui'               => true,
+  		'show_in_menu'          => true,
+  		'menu_position'         => 5,
+  		'show_in_admin_bar'     => true,
+  		'show_in_nav_menus'     => true,
+  		'can_export'            => true,
+  		'has_archive'           => 'loading-dock-products',
+  		'exclude_from_search'   => false,
+  		'publicly_queryable'    => true,
+  		'query_var'             => 'product',
+  		'rewrite'               => $rewrite,
+  		'capability_type'       => 'page',
+  		'show_in_rest'          => true,
+  	);
+  	register_post_type( 'product', $args );
+    
+  }
+  public function register_taxonomies() {
+    
+  	$labels = array(
+  		'name'                       => _x( 'Product categories', 'Taxonomy General Name', 'nifa-theme' ),
+  		'singular_name'              => _x( 'Product category', 'Taxonomy Singular Name', 'nifa-theme' ),
+  		'menu_name'                  => __( 'Product categories', 'nifa-theme' ),
+  		'all_items'                  => __( 'All categories', 'nifa-theme' ),
+  		'parent_item'                => __( 'Parent category', 'nifa-theme' ),
+  		'parent_item_colon'          => __( 'Parent category:', 'nifa-theme' ),
+  		'new_item_name'              => __( 'New Category Name', 'nifa-theme' ),
+  		'add_new_item'               => __( 'Add New Category', 'nifa-theme' ),
+  		'edit_item'                  => __( 'Edit Category', 'nifa-theme' ),
+  		'update_item'                => __( 'Update Category', 'nifa-theme' ),
+  		'view_item'                  => __( 'View Category', 'nifa-theme' ),
+  		'separate_items_with_commas' => __( 'Separate categories with commas', 'nifa-theme' ),
+  		'add_or_remove_items'        => __( 'Add or remove categories', 'nifa-theme' ),
+  		'choose_from_most_used'      => __( 'Choose from the most used', 'nifa-theme' ),
+  		'popular_items'              => __( 'Popular categories', 'nifa-theme' ),
+  		'search_items'               => __( 'Search categories', 'nifa-theme' ),
+  		'not_found'                  => __( 'Not Found', 'nifa-theme' ),
+  		'no_terms'                   => __( 'No categories', 'nifa-theme' ),
+  		'items_list'                 => __( 'Categories list', 'nifa-theme' ),
+  		'items_list_navigation'      => __( 'Categories list navigation', 'nifa-theme' ),
+  	);
+  	$rewrite = array(
+  		'slug'                       => 'loading-bay-products/products',
+  		'with_front'                 => false,
+  	);
+  	$args = array(
+  		'labels'                     => $labels,
+  		'hierarchical'               => true,
+  		'public'                     => true,
+  		'show_ui'                    => true,
+  		'show_admin_column'          => true,
+  		'show_in_nav_menus'          => true,
+  		'show_tagcloud'              => false,
+  		'rewrite'                    => $rewrite,
+  		'show_in_rest'               => true,
+  	);
+  	register_taxonomy( 'product_cat', array( 'product' ), $args );
+    
+  }
   public function register_widget_areas() {
     
     // Register widget areas

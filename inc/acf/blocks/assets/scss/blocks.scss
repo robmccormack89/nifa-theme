@@ -22,7 +22,7 @@
 }
 .position-middle {
   top: 50%;
-  transform: translate(-30px,-50%);
+  // transform: translate(-30px,-50%);
 }
 .position-top {
   top: 0;
@@ -71,7 +71,7 @@
 // sswiper pagination
 .swiper-pagination-bullet-active,
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-  background: #cf372d!important;
+  background: #1e87f0!important;
 }
 
 // video popup section
@@ -88,3 +88,11 @@
   color: #eeaf2e;
 }
 
+.position-middle {
+  transform: translate(0,-50%);
+}
+@media only screen and (max-width:959px) {
+  .position-middle {
+    transform: translate(0,-50%);
+  }
+}

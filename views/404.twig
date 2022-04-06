@@ -1,1 +1,17 @@
-404...
+{% extends "single-page.twig" %}
+
+{% import "snippets.twig" as snippets %}
+
+{% block single_content %}
+  <section class="article-content" hidden>
+    <div class="post-content article-content-editor gutenberg-editor">
+      {{ post.content }}
+    </div>
+  </section>
+  <div class="uk-container uk-container-small uk-sectionn uk-sectionn-small">
+    {{ snippets.error_page_msg }}
+    <div>
+      <a href="/" class="uk-margin-top uk-button uk-button-default uk-button-small">{{ snippets.error_page_return_txt }}</a>
+    </div>
+  </div>
+{% endblock %}

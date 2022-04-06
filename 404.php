@@ -2,7 +2,7 @@
 /**
  * The 404 template
  *
- * @package Rmcc_Theme
+ * @package NIFA-Theme
  */
  
  // namespace stuff
@@ -11,6 +11,9 @@
 
 // set the contexts
 $context = Theme::context();
+
+$context['post']['title'] = 'Error, page not found';
+$context['post']['description'] = 'Sorry, we couldnt find what you were looking for...';
 
 // and render
 Theme::render('404.twig', $context);

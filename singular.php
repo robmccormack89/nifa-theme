@@ -4,7 +4,7 @@
 *
 * The default template for displaying all singlular items (posts, pages & cpt singles)
 *
-* @package Rmcc_Theme
+* @package NIFA-Theme
 *
 */
 

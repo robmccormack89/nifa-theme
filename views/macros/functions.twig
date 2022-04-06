@@ -1,0 +1,28 @@
+{% macro password_protected_form(context) %}
+
+  {% import "snippets.twig" as snippets %}
+  {% set args = varargs[0] %}
+  
+  {% set site = context.site %}
+  {% set post = context.post %}
+  
+  {% set p_class = (args.small == true) ? 'uk-text-small' : 'uk-text-lead' %}
+  {% set input_class = (args.small == true) ? 'uk-form-small' : '' %}
+  {% set btn_class = (args.small == true) ? 'uk-button-small' : '' %}
+  
+  <p class="uk-text-center {{ p_class }}">{{ snippets.pass_protect_text|e('esc_html') }}</p>
+  <form class="password-form" action="{{ site.site_url|e('esc_url') }}/wp-login.php?action=postpass" method="post">
+    <div class="uk-grid-collapse uk-flex uk-flex-middle" uk-grid>
+      <div class="uk-width-auto uk-visible@m">
+        <label for="pwbox-{{ post.id|e('esc_html') }}" class="uk-form-label uk-margin-small-right">{{ snippets.pass_label|e('esc_html') }}:</label>
+      </div>
+      <div class="uk-width-expand">
+        <input class="password-box uk-input uk-width-expand {{ input_class }}" name="post_password" id="pwbox-{{ post.id|e('esc_html') }}" type="password" placeholder="{{ snippets.pass_label|e('esc_html') }}" size="20" maxlength="20" />
+      </div>
+      <div class="uk-width-auto">
+        <input class="password-btn uk-button uk-button-primary {{ btn_class }}" type="submit" name="Submit" value="{{ snippets.pass_enter_text|e('esc_html') }}" />
+      </div>
+    </div>
+  </form>
+  
+{% endmacro %}

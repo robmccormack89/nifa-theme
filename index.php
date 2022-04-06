@@ -5,7 +5,7 @@
 * The main blog posts archive template. This template will display the main blog posts archive, whether set to the homepage or any other page
 * This template will also get used when all other template are missing. which shouldnt be the case anyway
 *
-* @package Rmcc_Theme
+* @package NIFA-Theme
 *
 */
 

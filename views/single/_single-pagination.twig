@@ -1,0 +1,31 @@
+{% import "snippets.twig" as snippets %}
+
+{% if theme_config.theme_post_paging %}
+  {% if (post.next or post.prev) %}
+    <div class="article-pagination uk-margin-medium-top">
+      <div class="uk-child-width-1-2" uk-grid>
+        
+        {# left #}
+        <div class="prev-article uk-text-left">
+          {% if post.next %}
+            <a href="{{ post.next.link|e('esc_url') }}" class="uk-link-reset">
+              <div class="uk-text-emphasis"><i class="fas fa-angle-left"></i> {{ snippets.prev_post }}</div>
+              <div class="uk-text-small uk-text-meta uk-text-truncate uk-visible@m">{{ post.next.title|e('esc_html') }}</div>
+            </a>
+          {% endif %}
+        </div>
+        
+        {# right #}
+        <div class="next-article uk-text-right">
+          {% if post.prev %}
+            <a href="{{ post.prev.link|e('esc_url') }}" class="uk-link-reset">
+              <div class="uk-text-emphasis">{{ snippets.next_post }} <i class="fas fa-angle-right"></i></div>
+              <div class="uk-text-small uk-text-meta uk-text-truncate uk-visible@m">{{ post.prev.title|e('esc_html') }}</div>
+            </a>
+          {% endif %}
+        </div>
+        
+      </div>
+    </div>
+  {% endif %}
+{% endif %}
