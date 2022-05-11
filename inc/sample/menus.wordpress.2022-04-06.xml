@@ -16,7 +16,7 @@
 		<!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 		<!--    contained in this file into your site. -->
 
-		<!-- generator="WordPress/5.9.3" created="2022-04-06 16:16" -->
+		<!-- generator="WordPress/5.9.3" created="2022-05-11 15:08" -->
 		<rss version="2.0"
 		     xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 		     xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 				<title>National Inshore Fisherman&#039;s Association</title>
 				<link>https://inshore.ie</link>
 				<description>Our purpose is to make measurable &#38; sustainable impact on the revenue &#38; livelihood of inshore fishing folk</description>
-				<pubDate>Wed, 06 Apr 2022 16:16:21 +0000</pubDate>
+				<pubDate>Wed, 11 May 2022 15:08:41 +0000</pubDate>
 				<language></language>
 				<wp:wxr_version>1.2</wp:wxr_version>
 				<wp:base_site_url>https://inshore.ie</wp:base_site_url>
